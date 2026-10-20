@@ -1,6 +1,10 @@
 # II.3 — Sơ đồ lớp miền tổng quát: danh mục, ánh xạ và điểm chờ quyết định
 
-- **File nguồn:** `II3_Lop_Mien_Tong_Quat.puml` (PlantUML, sửa được).
+- **File nguồn:** `II3_Lop_Mien_Tong_Quat.puml` (PlantUML, sửa được). Bản mở bằng draw.io: `II3_Lop_Mien_Tong_Quat.drawio`.
+- **Khung nhìn để trình bày** (sinh tự động từ file nguồn bằng `../_cong_cu/tach_view_II3.py`, không sửa tay):
+  - `II3_Tong_Quan_Ten_Lop`: chỉ tên lớp và liên kết, dùng làm hình chính trong bài;
+  - `II3_View_A_V2-V4`, `II3_View_B_V5-V7`, `II3_View_C_V8-V10`: từng nhóm vùng, đủ thuộc tính; lớp vùng khác vẽ xám, chỉ ghi tên.
+  - Ba khung nhìn phủ đủ 49 lớp (20 + 12 + 17); không lớp nào bị bỏ hoặc lặp.
 - **Bản xuất:** `.png` để nhúng vào tài liệu, `.svg` để phóng to.
 - **Quy ước của sơ đồ:** mỗi package tương ứng một vùng nghiệp vụ chịu trách nhiệm chính cho lớp đó. Sơ đồ chỉ ghi thuộc tính chính và ẩn thao tác, vì đây là mô hình miền. Lớp gắn `<<đề xuất>>` chưa đủ căn cứ ngoài bài của một thành viên.
 - **Nguồn đã đọc:** bài V2a, V2b (bản mới nhất do trưởng nhóm gửi), V3, V4, V5, V6, V7, V8 (sơ đồ lớp mới gửi kèm), V9; bài V10 trong thư mục này; P1.

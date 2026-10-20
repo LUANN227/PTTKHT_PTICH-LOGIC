@@ -71,3 +71,24 @@ Actor chỉ gồm PM, RM, Nguồn lực, Tài chính, PMO/Quản lý danh mục,
 - Lớp có trong II.3.
 - UCD cấp vùng khớp II.1.
 - Không tự đặt quy tắc trái baseline.
+
+## 7. Trình bày [TN]
+
+Cấu trúc theo Phần I. Cách xuất hình theo ba hình mới của V8 (nền trắng, nét rõ, chữ đọc được ở chiều rộng trang).
+
+| # | Quy tắc | Ví dụ |
+|---|---|---|
+| 7.1 | Mục cấp vùng đánh số theo Phần I: `II.2.x. Vy — <tên vùng>` | "II.2.3. V4 — Tìm kiếm và đánh giá mức độ phù hợp" |
+| 7.2 | Chú thích hình đặt dưới hình, in nghiêng, dạng "Hình II.n. <loại sơ đồ> <mã UC>: <tên UC>" (P1 dùng "Hình n. Activity Diagram V4: …") | "Hình II.12. Activity Diagram UC-03.3: Đánh giá, xếp hạng và lập shortlist ứng viên" |
+| 7.3 | Tiêu đề trên sơ đồ là mã và tên UC theo HD-PCCN | Sai: "PHÂN HỆ V5" |
+| 7.4 | Chèn hình PNG xuất từ file nguồn ở tỷ lệ 150–200%, không chụp màn hình | |
+| 7.5 | Không để link Drive thay cho hình | |
+
+## 8. File nguồn của sơ đồ
+
+| # | Quy tắc |
+|---|---|
+| 8.1 | Mỗi hình trong bài có file nguồn sửa được nằm cạnh bản xuất |
+| 8.2 | Nhóm dùng draw.io, nên `.drawio` là nguồn chính. UCD và sơ đồ phân rã là hình gốc draw.io |
+| 8.3 | AD và sơ đồ lớp do trưởng nhóm lập bằng PlantUML: nguồn là `.puml`; file `.drawio` cùng tên chứa hình và mã PlantUML, mở được trong draw.io |
+| 8.4 | Sau khi sửa nguồn phải xuất lại PNG và xem lại hình trước khi chèn |

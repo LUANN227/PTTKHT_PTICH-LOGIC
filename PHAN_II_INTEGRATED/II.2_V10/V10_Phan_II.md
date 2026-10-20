@@ -53,7 +53,7 @@ Cách chia đề xuất giữ nguyên mã CN và mã UC, chỉ đổi CN nào th
 
 ### 2.3. Use Case Diagram (cấp vùng UC-09)
 
-Nguồn: `UCD_UC-09.puml`. Hình: `UCD_UC-09.png`.
+Nguồn: `UCD_UC-09.drawio` (hình gốc draw.io). Hình: `UCD_UC-09.png`.
 
 ![UCD UC-09](UCD_UC-09.png)
 
@@ -190,7 +190,7 @@ Không thêm nhánh "phương pháp dự báo không phù hợp" hay "ngưỡng 
 | Gọi UC khác | Bước 5 "Dự báo và đối chiếu (thực hiện UC-09.2)" là một action. AD không dùng ký hiệu include |
 | Điểm kết thúc | Sau khi PM có thể tra cứu kết quả |
 
-Nguồn: `AD_UC-09.1.puml`. Hình: `AD_UC-09_1.png`.
+Nguồn: `AD_UC-09.1.puml`; bản mở bằng draw.io: `AD_UC-09.1.drawio`. Hình: `AD_UC-09_1.png`.
 
 ![AD UC-09.1](AD_UC-09_1.png)
 
@@ -205,7 +205,7 @@ Nguồn: `AD_UC-09.1.puml`. Hình: `AD_UC-09_1.png`.
 | Fork/Join | Không có |
 | Điểm kết thúc | Sau khi trả kết quả cho UC-09.1 |
 
-Nguồn: `AD_UC-09.2.puml`. Hình: `AD_UC-09_2.png`.
+Nguồn: `AD_UC-09.2.puml`; bản mở bằng draw.io: `AD_UC-09.2.drawio`. Hình: `AD_UC-09_2.png`.
 
 ![AD UC-09.2](AD_UC-09_2.png)
 
@@ -314,7 +314,7 @@ Sơ đồ II.3 là mô hình miền nên ẩn thao tác. Nếu II.4 cần, gợi
 
 ## 12. Domain/Class Diagram đề xuất
 
-Lớp nền xám thuộc vùng khác; V10 chỉ tham chiếu. Nguồn: `Class_V10.puml`. Hình: `Class_V10.png`.
+Lớp nền xám thuộc vùng khác; V10 chỉ tham chiếu. Nguồn: `Class_V10.puml`; bản mở bằng draw.io: `Class_V10.drawio`. Hình: `Class_V10.png`.
 
 ![Class V10](Class_V10.png)
 

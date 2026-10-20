@@ -1,0 +1,185 @@
+@startuml II3_View_A_V2-V4
+' Sinh tự động từ II3_Lop_Mien_Tong_Quat.puml bằng _cong_cu/tach_view_II3.py. Không sửa tay.
+!pragma layout smetana
+' II.3 - So do lop mien tong quat (tich hop V2-V10)
+' Chi ghi thuoc tinh chinh, an thao tac. Danh muc day du: II3_Danh_muc_va_anh_xa.md
+' <<de xuat>>: lop chi co can cu tu mot bai thanh vien, cho truong nhom xac nhan.
+hide circle
+hide methods
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam packageStyle rectangle
+skinparam class {
+  BackgroundColor #FFFFFF
+  BorderColor #333333
+}
+skinparam stereotypeCBackgroundColor #FFFFFF
+
+title Khung nhìn A: Nhu cầu, năng lực, tìm kiếm (V2–V4)
+package "Dự án và nhu cầu (V2)" {
+  class DuAn {
+    maDuAn
+    tenDuAn
+    ngayBatDau
+    ngayKetThuc
+    hangUuTien
+  }
+  class GiaiDoanDuAn {
+    maGiaiDoan
+    tenGiaiDoan
+    ngayBatDau
+    ngayKetThuc
+  }
+  class NhuCauNguonLuc {
+    maNhuCau
+    phamViCongViec
+    thoiGianBatDau
+    thoiGianKetThuc
+    trangThai
+  }
+  class ViTriCanBoTri {
+    maViTri
+    vaiTro
+    soLuong
+    tyLeFTE
+  }
+  class YeuCauKyNang {
+    capDoYeuCau
+    batBuoc
+  }
+  class PhanHoiNhuCau {
+    maPhanHoi
+    nguonPhanHoi
+    noiDung
+    thoiDiem
+  }
+  class YeuCauNguonLuc <<đề xuất>> {
+    maYeuCau
+    khungThoiGian
+  }
+}
+package "Năng lực (V3)" {
+  class NguonLuc {
+    maNguonLuc
+    hoTen
+    loaiNguon
+    nangLucChuan
+  }
+  class KyNang {
+    maKyNang
+    tenKyNang
+  }
+  class HoSoNangLuc {
+    kinhNghiem
+    chungChi
+    mucDapUngVaiTro
+    khoangThieu
+  }
+  class NangLucKyNang {
+    mucThanhThao
+    trangThaiXacNhan
+    ngayDanhGia
+  }
+  class BoTieuChiNangLuc {
+    maBo
+    trangThai
+  }
+  class TieuChiNangLuc {
+    maTieuChi
+    tenTieuChi
+    trangThai
+  }
+  class MucDoNangLuc {
+    thuTu
+    moTa
+    dieuKienCongNhan
+  }
+}
+package "Tìm kiếm và phù hợp (V4)" {
+  class BoTieuChiPhuHop {
+    phienBan
+    ngayXacLap
+  }
+  class TieuChiPhuHop {
+    tenTieuChi
+    loai
+    trongSo
+  }
+  class PhienTimKiem {
+    maPhien
+    thoiDiem
+    trangThai
+  }
+  class KetQuaDanhGiaPhuHop {
+    phanLoai
+    diemTong
+    thuHang
+    vaiTroShortlist
+  }
+  class DiemTieuChi {
+    diem
+  }
+  class DeNghiMienTru {
+    lyDo
+    trangThai
+  }
+}
+package "Lớp của vùng khác (chỉ tham chiếu)" #F5F5F5 {
+  class ChiTietBoTri #EEEEEE
+  class DiemXungDot #EEEEEE
+  class KetLuanKhaNangThamGia #EEEEEE
+  class KetQuaDuBao #EEEEEE
+  class LichNguonLuc #EEEEEE
+  class NganSach #EEEEEE
+  class NhuCauDuBao #EEEEEE
+  class PhanBoNguonLuc #EEEEEE
+  class PhuongAnBoTri #EEEEEE
+  class RuiRoViTri #EEEEEE
+  class TongHopNguonCung #EEEEEE
+}
+hide ChiTietBoTri members
+hide DiemXungDot members
+hide KetLuanKhaNangThamGia members
+hide KetQuaDuBao members
+hide LichNguonLuc members
+hide NganSach members
+hide NhuCauDuBao members
+hide PhanBoNguonLuc members
+hide PhuongAnBoTri members
+hide RuiRoViTri members
+hide TongHopNguonCung members
+DuAn "1" *-- "1..*" GiaiDoanDuAn
+DuAn "1" -- "0..*" NhuCauNguonLuc
+NhuCauNguonLuc "1" *-- "1..*" ViTriCanBoTri
+ViTriCanBoTri "0..*" -- "0..1" GiaiDoanDuAn
+ViTriCanBoTri "1" *-- "0..*" YeuCauKyNang
+YeuCauKyNang "0..*" -- "1" KyNang
+NhuCauNguonLuc "1" -- "0..*" PhanHoiNhuCau
+DuAn "1" -- "0..*" YeuCauNguonLuc
+NguonLuc "1" -- "1" HoSoNangLuc
+HoSoNangLuc "1" *-- "0..*" NangLucKyNang
+NangLucKyNang "0..*" -- "1" KyNang
+BoTieuChiNangLuc "1" o-- "1..*" TieuChiNangLuc
+TieuChiNangLuc "1" *-- "1..*" MucDoNangLuc
+TieuChiNangLuc "0..*" -- "0..1" KyNang
+NhuCauNguonLuc "1" -- "0..*" BoTieuChiPhuHop
+BoTieuChiPhuHop "1" *-- "1..*" TieuChiPhuHop
+BoTieuChiPhuHop "1" -- "0..*" PhienTimKiem
+PhienTimKiem "1" *-- "0..*" KetQuaDanhGiaPhuHop
+KetQuaDanhGiaPhuHop "0..*" -- "1" NguonLuc
+KetQuaDanhGiaPhuHop "1" *-- "0..*" DiemTieuChi
+DiemTieuChi "0..*" -- "1" TieuChiPhuHop
+KetQuaDanhGiaPhuHop "1" -- "0..1" DeNghiMienTru
+NguonLuc "1" -- "1" LichNguonLuc
+PhanBoNguonLuc "0..*" -- "1" DuAn
+KetQuaDanhGiaPhuHop "1" -- "0..1" KetLuanKhaNangThamGia : shortlist
+NhuCauNguonLuc "1" -- "0..*" PhuongAnBoTri
+ChiTietBoTri "0..*" -- "1" NguonLuc
+ChiTietBoTri "0..*" -- "1" ViTriCanBoTri
+RuiRoViTri "0..*" -- "1" ViTriCanBoTri
+DiemXungDot "0..*" -- "1" NguonLuc
+DuAn "1" -- "0..*" NganSach
+TongHopNguonCung "0..*" -- "1" NguonLuc
+NhuCauDuBao "0..*" -- "0..1" NhuCauNguonLuc
+PhanHoiNhuCau "0..*" -- "0..1" KetQuaDuBao
+@enduml
