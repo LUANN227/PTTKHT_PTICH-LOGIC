@@ -1,0 +1,82 @@
+@startuml AD_UC-09_1
+' AD UC-09.1 Tong hop va phan tich cung - cau nguon luc
+' Nguon: Phan I I.1.3.10 buoc 1-3, 6-8; I.3.9 buoc 1-3, 6-8; CN-113..115, CN-120..124
+skinparam shadowing false
+skinparam defaultFontName Arial
+title UC-09.1 Tổng hợp và phân tích cung – cầu nguồn lực
+|RM|
+start
+:Bắt đầu chu kỳ theo dõi
+(hàng tuần, sau khi lịch tuần được cập nhật ở V5,
+hoặc khi có thay đổi đáng kể);
+fork
+  |RM|
+  :Tổng hợp thông tin nguồn cung hiện tại
+  (nguồn lực, khả năng sẵn sàng,
+  phân bổ hoặc cam kết hiện có);
+  |Hệ thống|
+  :Tổng hợp dữ liệu từ hồ sơ năng lực (V3),
+  lịch nguồn lực (V5), Locked Baseline (V8),
+  thông tin xử lý xung đột (V7);
+  if (Dữ liệu nguồn cung đầy đủ?) then (Thiếu dữ liệu)
+    |RM|
+    :Ghi nhận phần dữ liệu thiếu
+    và yêu cầu bổ sung;
+    |Hệ thống|
+    :Đánh dấu kết quả tạm thời
+    "chưa đủ cơ sở";
+  else (Đủ)
+  endif
+fork again
+  |PM|
+  :Cung cấp và xác nhận nhu cầu theo dự án,
+  vai trò, kỹ năng, thời gian
+  (lấy từ V2, bổ sung nhu cầu dự kiến);
+  |Hệ thống|
+  :Ghi nhận nhu cầu do PM cung cấp;
+end fork
+|RM|
+:Trừ phần đã phân bổ hoặc cam kết
+khỏi nguồn lực hiện có;
+|Hệ thống|
+:Tính nguồn cung có thể đáp ứng
+(nguồn lực nhiều cam kết: tính đủ các phần);
+|RM|
+:Dự báo và đối chiếu cung – cầu
+(thực hiện UC-09.2);
+|Hệ thống|
+:Trả kết quả dự báo
+và mức độ đáp ứng;
+if (Mức độ đáp ứng?) then (Thiếu hoặc dư)
+  |RM|
+  :Phân tích khoảng thiếu/dư theo số lượng,
+  vai trò, kỹ năng, thời điểm;
+  note right
+    Tổng số đủ nhưng thiếu người có kỹ năng
+    phù hợp thì kết luận "thiếu năng lực" (CN-120)
+  end note
+else (Đáp ứng)
+endif
+|RM|
+:Xem thông tin chi phí, đánh đổi từ V9
+làm căn cứ bổ sung (không dùng để dự báo);
+:Tổng hợp kết quả theo dõi, dự báo,
+đối chiếu, phân tích;
+if (Có khoảng thiếu/dư hoặc kết luận
+khác chu kỳ trước?) then (Cần chuyển thông tin)
+  |Hệ thống|
+  :Ghi nhận quyết định "chuyển thông tin";
+  :Chuyển kết quả theo từng nơi nhận:
+  V2 (khả năng cung ứng, thiếu/dư),
+  V6 (lịch phân bổ, nguồn cung còn lại),
+  V7 (thiếu/dư, tình trạng cung – cầu),
+  V8 (tổng hợp cung – cầu, kết quả dự báo);
+else (Tiếp tục theo dõi)
+  |Hệ thống|
+  :Ghi nhận quyết định "tiếp tục theo dõi";
+endif
+|Hệ thống|
+:Cho PM tra cứu thông tin nguồn lực
+và tình trạng cung – cầu;
+stop
+@enduml
