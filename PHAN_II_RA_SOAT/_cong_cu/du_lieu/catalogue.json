@@ -1,0 +1,556 @@
+{
+  "regions": [
+    [
+      "UC-01",
+      "Xác định nhu cầu nguồn lực",
+      "V2",
+      [
+        [
+          "UC-01.1",
+          "Xây dựng và hoàn thiện nhu cầu"
+        ],
+        [
+          "UC-01.2",
+          "Xác nhận nhu cầu"
+        ],
+        [
+          "UC-01.3",
+          "Điều chỉnh nhu cầu theo phản hồi"
+        ]
+      ]
+    ],
+    [
+      "UC-02",
+      "Đánh giá năng lực nguồn lực",
+      "V3",
+      [
+        [
+          "UC-02.1",
+          "Quản lý tiêu chí đánh giá năng lực"
+        ],
+        [
+          "UC-02.2",
+          "Đánh giá năng lực nguồn lực"
+        ],
+        [
+          "UC-02.3",
+          "Xác nhận và cập nhật hồ sơ năng lực"
+        ]
+      ]
+    ],
+    [
+      "UC-03",
+      "Tìm kiếm và đánh giá mức độ phù hợp",
+      "V4",
+      [
+        [
+          "UC-03.1",
+          "Xác lập tiêu chí tìm kiếm và đánh giá"
+        ],
+        [
+          "UC-03.2",
+          "Tìm kiếm ứng viên"
+        ],
+        [
+          "UC-03.3",
+          "Đánh giá, xếp hạng và lập shortlist ứng viên"
+        ],
+        [
+          "UC-03.4",
+          "Điều chỉnh kết quả đánh giá"
+        ]
+      ]
+    ],
+    [
+      "UC-04",
+      "Đánh giá khả năng tham gia",
+      "V5",
+      [
+        [
+          "UC-04.1",
+          "Đánh giá khả năng tham gia"
+        ],
+        [
+          "UC-04.2",
+          "Xử lý phương án tham gia một phần"
+        ],
+        [
+          "UC-04.3",
+          "Xử lý trường hợp vượt tải ngoại lệ"
+        ]
+      ]
+    ],
+    [
+      "UC-05",
+      "Lập phương án bố trí nguồn lực",
+      "V6",
+      [
+        [
+          "UC-05.1",
+          "Xây dựng phương án bố trí"
+        ],
+        [
+          "UC-05.2",
+          "Rà soát phương án bố trí"
+        ]
+      ]
+    ],
+    [
+      "UC-06",
+      "Xử lý xung đột và cân đối nguồn lực",
+      "V7",
+      [
+        [
+          "UC-06.1",
+          "Phân tích và đánh giá xung đột"
+        ],
+        [
+          "UC-06.2",
+          "Cân đối nguồn lực"
+        ],
+        [
+          "UC-06.3",
+          "Phân xử xung đột"
+        ]
+      ]
+    ],
+    [
+      "UC-07",
+      "Rà soát và phê duyệt phương án",
+      "V8",
+      [
+        [
+          "UC-07.1",
+          "Rà soát và đánh giá phương án"
+        ],
+        [
+          "UC-07.2",
+          "Yêu cầu giải trình và hoàn thiện phương án"
+        ],
+        [
+          "UC-07.3",
+          "Phê duyệt phương án"
+        ],
+        [
+          "UC-07.4",
+          "Phê duyệt ngoại lệ"
+        ]
+      ]
+    ],
+    [
+      "UC-08",
+      "Đánh giá tác động chi phí và ngân sách",
+      "V9",
+      [
+        [
+          "UC-08.1",
+          "Tính và cập nhật chi phí phương án"
+        ],
+        [
+          "UC-08.2",
+          "Đối chiếu chi phí và ngân sách"
+        ],
+        [
+          "UC-08.3",
+          "So sánh đánh đổi giữa các phương án"
+        ],
+        [
+          "UC-08.4",
+          "Xác định hướng xử lý và chuyển cấp ngân sách"
+        ]
+      ]
+    ],
+    [
+      "UC-09",
+      "Theo dõi và dự báo nguồn lực",
+      "V10",
+      [
+        [
+          "UC-09.1",
+          "Tổng hợp và phân tích cung – cầu nguồn lực"
+        ],
+        [
+          "UC-09.2",
+          "Dự báo cung – cầu nguồn lực"
+        ]
+      ]
+    ]
+  ],
+  "ucs": [
+    {
+      "id": "UC-01.1",
+      "name": "Xây dựng và hoàn thiện nhu cầu",
+      "region": "V2",
+      "group": "UC-01",
+      "cn": "01–09, 11",
+      "actor": "PM",
+      "scope": "Xác định và hoàn thiện nhu cầu theo loại/vị trí, giai đoạn và mức tham gia; chuyển RM xem xét.",
+      "input": "Thông tin dự án, phạm vi và tiến độ",
+      "output": "Nhu cầu hoàn thiện được gửi RM",
+      "core": true,
+      "owner": "Nguyễn Thị Thùy Linh (01.1); Nguyễn Tuấn Long (01.2, 01.3)"
+    },
+    {
+      "id": "UC-01.2",
+      "name": "Xác nhận nhu cầu",
+      "region": "V2",
+      "group": "UC-01",
+      "cn": "12–14, 16",
+      "actor": "RM",
+      "scope": "Xem xét, xác nhận hoặc trả PM bổ sung; bàn giao nhu cầu đã xác nhận.",
+      "input": "Nhu cầu PM chuyển tới",
+      "output": "Nhu cầu đã xác nhận hoặc nội dung cần bổ sung",
+      "core": true,
+      "owner": "Nguyễn Thị Thùy Linh (01.1); Nguyễn Tuấn Long (01.2, 01.3)"
+    },
+    {
+      "id": "UC-01.3",
+      "name": "Điều chỉnh nhu cầu theo phản hồi",
+      "region": "V2",
+      "group": "UC-01",
+      "cn": "10, 15, 17",
+      "actor": "PM",
+      "scope": "Xem phản hồi RM/V4/V10, điều chỉnh nhu cầu và gửi RM xem xét lại.",
+      "input": "Nhu cầu hiện tại và phản hồi",
+      "output": "Nhu cầu được cập nhật, chưa tự coi là đã xác nhận",
+      "core": true,
+      "owner": "Nguyễn Thị Thùy Linh (01.1); Nguyễn Tuấn Long (01.2, 01.3)"
+    },
+    {
+      "id": "UC-02.1",
+      "name": "Quản lý tiêu chí đánh giá năng lực",
+      "region": "V3",
+      "group": "UC-02",
+      "cn": "18–19",
+      "actor": "RM; PMO",
+      "scope": "Duy trì kỹ năng, tiêu chí, thang 5 mức; tiêu chí tạm chỉ dùng sau PMO duyệt.",
+      "input": "Bộ tiêu chí và đề xuất tiêu chí tạm",
+      "output": "Bộ tiêu chí sử dụng được; tình trạng tiêu chí tạm",
+      "core": true,
+      "owner": "Lê Hoài Linh"
+    },
+    {
+      "id": "UC-02.2",
+      "name": "Đánh giá năng lực nguồn lực",
+      "region": "V3",
+      "group": "UC-02",
+      "cn": "20–27",
+      "actor": "RM; Nguồn lực",
+      "scope": "Đánh giá từng kỹ năng, mức tin cậy, chứng chỉ và khoảng thiếu so với vai trò.",
+      "input": "Khai báo năng lực và tiêu chí đã xác lập",
+      "output": "Kết quả đánh giá và trạng thái năng lực",
+      "core": false,
+      "owner": "Lê Hoài Linh"
+    },
+    {
+      "id": "UC-02.3",
+      "name": "Xác nhận và cập nhật hồ sơ năng lực",
+      "region": "V3",
+      "group": "UC-02",
+      "cn": "28–30",
+      "actor": "RM; PMO",
+      "scope": "Xác nhận kết quả, xử lý xác nhận cuối khi tranh chấp; lưu và tra cứu hồ sơ tập trung.",
+      "input": "Kết quả đánh giá và căn cứ xác minh",
+      "output": "Hồ sơ năng lực được cập nhật",
+      "core": false,
+      "owner": "Lê Hoài Linh"
+    },
+    {
+      "id": "UC-03.1",
+      "name": "Xác lập tiêu chí tìm kiếm và đánh giá",
+      "region": "V4",
+      "group": "UC-03",
+      "cn": "31–32",
+      "actor": "RM",
+      "scope": "Tiếp nhận nhu cầu đã xác nhận; lập điều kiện, tiêu chí và trọng số riêng cho nhu cầu.",
+      "input": "Nhu cầu và yêu cầu vị trí",
+      "output": "Bộ tiêu chí phù hợp cho nhu cầu",
+      "core": false,
+      "owner": "Nguyễn Hoàng Linh"
+    },
+    {
+      "id": "UC-03.2",
+      "name": "Tìm kiếm ứng viên",
+      "region": "V4",
+      "group": "UC-03",
+      "cn": "33",
+      "actor": "RM",
+      "scope": "Tìm ứng viên theo thứ tự nội bộ, cộng tác viên/đối tác, tuyển ngoài; mở rộng khi nguồn trước không đủ.",
+      "input": "Nhu cầu và tiêu chí tìm kiếm",
+      "output": "Danh sách ứng viên",
+      "core": false,
+      "owner": "Nguyễn Hoàng Linh"
+    },
+    {
+      "id": "UC-03.3",
+      "name": "Đánh giá, xếp hạng và lập shortlist ứng viên",
+      "region": "V4",
+      "group": "UC-03",
+      "cn": "34–42, 44–46",
+      "actor": "RM; PMO",
+      "scope": "Đối chiếu điều kiện, miễn trừ có duyệt, chấm điểm, xếp hạng, lập shortlist; phản hồi V2 khi cạn cách xử lý.",
+      "input": "Ứng viên, hồ sơ năng lực, bộ tiêu chí",
+      "output": "Kết quả đánh giá, shortlist hoặc phản hồi không đáp ứng",
+      "core": true,
+      "owner": "Nguyễn Hoàng Linh"
+    },
+    {
+      "id": "UC-03.4",
+      "name": "Điều chỉnh kết quả đánh giá",
+      "region": "V4",
+      "group": "UC-03",
+      "cn": "43",
+      "actor": "RM; PMO",
+      "scope": "Điều chỉnh xếp hạng/shortlist có lý do; chỉ có hiệu lực sau PMO phê duyệt.",
+      "input": "Kết quả hiện tại và lý do điều chỉnh",
+      "output": "Kết quả điều chỉnh được duyệt và lưu vết",
+      "core": false,
+      "owner": "Nguyễn Hoàng Linh"
+    },
+    {
+      "id": "UC-04.1",
+      "name": "Đánh giá khả năng tham gia",
+      "region": "V5",
+      "group": "UC-04",
+      "cn": "47–52, 55, 58–59, 127",
+      "actor": "RM; PM",
+      "scope": "PM gửi yêu cầu theo thời gian; RM đánh giá từng ứng viên, ghi trạng thái/căn cứ và chuyển đúng nơi.",
+      "input": "Yêu cầu theo thời gian, shortlist và lịch",
+      "output": "Kết luận khả năng tham gia; trường hợp cần xác minh/chuyển xử lý",
+      "core": true,
+      "owner": "Nguyễn Hoàng Khánh Linh"
+    },
+    {
+      "id": "UC-04.2",
+      "name": "Xử lý phương án tham gia một phần",
+      "region": "V5",
+      "group": "UC-04",
+      "cn": "53–54",
+      "actor": "RM; PM",
+      "scope": "RM đề xuất tỷ lệ/khung thời gian; PM xác nhận hoặc từ chối phương án một phần.",
+      "input": "Kết luận chỉ đáp ứng một phần",
+      "output": "Kết quả xác nhận và hướng xử lý tiếp theo",
+      "core": false,
+      "owner": "Nguyễn Hoàng Khánh Linh"
+    },
+    {
+      "id": "UC-04.3",
+      "name": "Xử lý trường hợp vượt tải ngoại lệ",
+      "region": "V5",
+      "group": "UC-04",
+      "cn": "56–57",
+      "actor": "RM; PMO; CEO",
+      "scope": "Ghi nhận hồ sơ vượt tải ngoại lệ, chuyển và phê duyệt theo mức, điều kiện, thời hạn, kế hoạch giảm tải.",
+      "input": "Trường hợp vượt tải có căn cứ",
+      "output": "Quyết định ngoại lệ và điều kiện áp dụng",
+      "core": false,
+      "owner": "Nguyễn Hoàng Khánh Linh"
+    },
+    {
+      "id": "UC-05.1",
+      "name": "Xây dựng phương án bố trí",
+      "region": "V6",
+      "group": "UC-05",
+      "cn": "60–68; 73 theo trạng thái",
+      "actor": "RM",
+      "scope": "Chọn người–vị trí–giai đoạn; xây dựng phương án chính/thay thế, rủi ro và gửi PM; theo dõi hạn đang xây dựng.",
+      "input": "Nhu cầu, ứng viên và khả năng tham gia",
+      "output": "Phương án dự thảo đã gửi PM",
+      "core": true,
+      "owner": "Nguyễn Thi Thùy Linh"
+    },
+    {
+      "id": "UC-05.2",
+      "name": "Rà soát phương án bố trí",
+      "region": "V6",
+      "group": "UC-05",
+      "cn": "69–72; tham chiếu 73",
+      "actor": "PM; RM",
+      "scope": "PM rà soát/xác nhận hoặc yêu cầu sửa; RM đối chiếu lịch/tải và chuyển V7 hoặc V8, V9.",
+      "input": "Phương án dự thảo",
+      "output": "Phản hồi sửa hoặc phương án chuyển xử lý tiếp",
+      "core": false,
+      "owner": "Nguyễn Thi Thùy Linh"
+    },
+    {
+      "id": "UC-06.1",
+      "name": "Phân tích và đánh giá xung đột",
+      "region": "V7",
+      "group": "UC-06",
+      "cn": "74–77; 87–88 dùng chung",
+      "actor": "RM; PM",
+      "scope": "Phân tích xung đột, mức ảnh hưởng và căn cứ ưu tiên; phân biệt nghi ngờ với xung đột thực tế.",
+      "input": "Phương án/hồ sơ xung đột từ V5, V6",
+      "output": "Kết quả phân tích, tình huống cần cân đối",
+      "core": false,
+      "owner": "Lưu Thùy Linh"
+    },
+    {
+      "id": "UC-06.2",
+      "name": "Cân đối nguồn lực",
+      "region": "V7",
+      "group": "UC-06",
+      "cn": "78–82, 86; 87–88 dùng chung",
+      "actor": "RM; PM",
+      "scope": "PM đàm phán, RM điều phối, làm mịn/san bằng; ghi đề xuất thay đổi và chuyển đúng cấp khi cần.",
+      "input": "Kết quả phân tích và các phương án liên quan",
+      "output": "Kết quả cân đối, nhật ký và đề xuất thay đổi nếu có",
+      "core": true,
+      "owner": "Lưu Thùy Linh"
+    },
+    {
+      "id": "UC-06.3",
+      "name": "Phân xử xung đột",
+      "region": "V7",
+      "group": "UC-06",
+      "cn": "83–85; 87–88 dùng chung",
+      "actor": "RM; PMO; CEO",
+      "scope": "Chuyển cấp khi hết hạn/bế tắc; người có thẩm quyền phân xử và ghi quyết định.",
+      "input": "Hồ sơ chuyển cấp và căn cứ ưu tiên",
+      "output": "Quyết định phân xử và kết quả bàn giao",
+      "core": false,
+      "owner": "Lưu Thùy Linh"
+    },
+    {
+      "id": "UC-07.1",
+      "name": "Rà soát và đánh giá phương án",
+      "region": "V8",
+      "group": "UC-07",
+      "cn": "89–94",
+      "actor": "PMO; CEO",
+      "scope": "Tiếp nhận, đối chiếu DoA, rà soát hồ sơ cùng thông tin V9/V10; kết luận đủ cơ sở hay cần giải trình.",
+      "input": "Hồ sơ V6/V7, dữ liệu chi phí/dự báo",
+      "output": "Kết quả rà soát; chuyển 07.2 hoặc bước quyết định",
+      "core": true,
+      "owner": "Ngọc Linh"
+    },
+    {
+      "id": "UC-07.2",
+      "name": "Yêu cầu giải trình và hoàn thiện phương án",
+      "region": "V8",
+      "group": "UC-07",
+      "cn": "95–96; tham chiếu 101",
+      "actor": "PMO; RM",
+      "scope": "Yêu cầu và tiếp nhận giải trình; chỉ bổ sung thì rà soát lại, đổi phân bổ/xung đột thì trả V6/V7.",
+      "input": "Nội dung cần làm rõ và hồ sơ",
+      "output": "Hồ sơ bổ sung hoặc yêu cầu lập/cân đối lại",
+      "core": false,
+      "owner": "Ngọc Linh"
+    },
+    {
+      "id": "UC-07.3",
+      "name": "Phê duyệt phương án",
+      "region": "V8",
+      "group": "UC-07",
+      "cn": "97, 99–102",
+      "actor": "PMO; CEO",
+      "scope": "Ra quyết định thông thường, lưu lý do/phiên bản; duyệt thì xác lập Locked Baseline và chuyển kết quả.",
+      "input": "Hồ sơ đủ cơ sở và cấp thẩm quyền",
+      "output": "Quyết định, cam kết được duyệt hoặc hồ sơ trả/từ chối",
+      "core": false,
+      "owner": "Ngọc Linh"
+    },
+    {
+      "id": "UC-07.4",
+      "name": "Phê duyệt ngoại lệ",
+      "region": "V8",
+      "group": "UC-07",
+      "cn": "98; kết quả theo 99–102",
+      "actor": "PMO; CEO",
+      "scope": "Xem xét ngoại lệ có lý do, điều kiện hoàn trả/rà soát lại và cấp có thẩm quyền.",
+      "input": "Hồ sơ ngoại lệ và tác động",
+      "output": "Quyết định ngoại lệ hoặc từ chối, điều kiện kèm theo",
+      "core": false,
+      "owner": "Ngọc Linh"
+    },
+    {
+      "id": "UC-08.1",
+      "name": "Tính và cập nhật chi phí phương án",
+      "region": "V9",
+      "group": "UC-08",
+      "cn": "103–107",
+      "actor": "PM; Tài chính",
+      "scope": "Xác định yếu tố chi phí, đơn giá, dự toán/dự báo; ghi chi phí thực tế và tính lại khi thay đổi.",
+      "input": "Phương án, khối lượng, thời gian, đơn giá",
+      "output": "Chi phí dự toán/dự báo và phần bị ảnh hưởng",
+      "core": true,
+      "owner": "Ngô Nhật Long"
+    },
+    {
+      "id": "UC-08.2",
+      "name": "Đối chiếu chi phí và ngân sách",
+      "region": "V9",
+      "group": "UC-08",
+      "cn": "108–109",
+      "actor": "PM; Tài chính",
+      "scope": "Đối chiếu chi phí với ngân sách duyệt/phần còn lại; ghi chênh lệch, trạng thái và nguyên nhân.",
+      "input": "Chi phí và ngân sách",
+      "output": "Kết quả đối chiếu ngân sách",
+      "core": false,
+      "owner": "Ngô Nhật Long"
+    },
+    {
+      "id": "UC-08.3",
+      "name": "So sánh đánh đổi giữa các phương án",
+      "region": "V9",
+      "group": "UC-08",
+      "cn": "110",
+      "actor": "PM",
+      "scope": "So sánh từ hai phương án theo chất lượng tối thiểu, rồi chi phí, rồi thời gian; hệ thống cung cấp dữ liệu.",
+      "input": "Các phương án và kết quả chi phí",
+      "output": "Kết quả so sánh đánh đổi",
+      "core": false,
+      "owner": "Ngô Nhật Long"
+    },
+    {
+      "id": "UC-08.4",
+      "name": "Xác định hướng xử lý và chuyển cấp ngân sách",
+      "region": "V9",
+      "group": "UC-08",
+      "cn": "111–112, 128–129",
+      "actor": "PM; PMO; CEO",
+      "scope": "PM chọn hướng xử lý; không quá 10% tự điều chỉnh hoặc xin PMO; trên 10% chuyển CEO; ghi quyết định.",
+      "input": "Kết quả đối chiếu và phương án",
+      "output": "Hướng xử lý/quyết định ngân sách, thông tin V8/V10",
+      "core": false,
+      "owner": "Ngô Nhật Long"
+    },
+    {
+      "id": "UC-09.1",
+      "name": "Tổng hợp và phân tích cung – cầu nguồn lực",
+      "region": "V10",
+      "group": "UC-09",
+      "cn": "113–115, 120–124",
+      "actor": "RM; PM",
+      "scope": "Tổng hợp cung/cầu, trừ cam kết, dùng kết quả dự báo để phân tích thiếu/dư và chuyển thông tin theo quyết định RM.",
+      "input": "Nguồn lực, lịch/cam kết, nhu cầu và kết quả dự báo",
+      "output": "Bức tranh cung/cầu, khoảng thiếu/dư và kết quả theo nơi nhận",
+      "core": true,
+      "owner": "Trưởng nhóm"
+    },
+    {
+      "id": "UC-09.2",
+      "name": "Dự báo cung – cầu nguồn lực",
+      "region": "V10",
+      "group": "UC-09",
+      "cn": "116–119, 125–126",
+      "actor": "RM",
+      "scope": "Xét nhu cầu đủ cơ sở/mức chắc chắn, dự báo và đối chiếu theo thời gian; tuần hoặc ngoài chu kỳ theo nguồn.",
+      "input": "Nguồn cung có thể đáp ứng, nhu cầu và khoảng thời gian",
+      "output": "Kết quả dự báo/đối chiếu kèm mức thiếu dữ liệu",
+      "core": true,
+      "owner": "Trưởng nhóm"
+    }
+  ],
+  "owners": {
+    "V2": "Nguyễn Thị Thùy Linh (01.1); Nguyễn Tuấn Long (01.2, 01.3)",
+    "V3": "Lê Hoài Linh",
+    "V4": "Nguyễn Hoàng Linh",
+    "V5": "Nguyễn Hoàng Khánh Linh",
+    "V6": "Nguyễn Thi Thùy Linh",
+    "V7": "Lưu Thùy Linh",
+    "V8": "Ngọc Linh",
+    "V9": "Ngô Nhật Long",
+    "V10": "Trưởng nhóm"
+  }
+}
