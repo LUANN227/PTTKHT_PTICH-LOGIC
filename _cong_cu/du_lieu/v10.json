@@ -1,0 +1,249 @@
+{
+  "specs": [
+    {
+      "id": "UC-09.1",
+      "name": "Tổng hợp và phân tích cung – cầu nguồn lực",
+      "actor": "RM",
+      "secondary": "PM: cung cấp, xác nhận nhu cầu và tra cứu kết quả",
+      "goal": "Có bức tranh nguồn cung, nhu cầu và khả năng đáp ứng theo thời gian; RM phân tích thiếu/dư và ghi quyết định chuyển kết quả hoặc tiếp tục theo dõi.",
+      "trigger": "Đến kỳ hàng tuần sau cập nhật lịch V5, hoặc RM ghi nhận thay đổi đáng kể về cung, cầu hay khoảng thời gian. Không chạy một lần liên tục đến tuần kế tiếp trong AD.",
+      "pre": "Đã xác định phạm vi và khoảng thời gian cần theo dõi; có thể truy cập hồ sơ năng lực tập trung V3, lịch/phân bổ V5 và các cam kết hiện có. Có thể bắt đầu tổng hợp khi dữ liệu còn thiếu; phải xử lý E1 trước dự báo chính thức.",
+      "post": "Thành công: lưu tổng hợp, kết quả dự báo/đối chiếu, phân tích bốn chiều và quyết định RM; nếu chuyển thì đúng nơi nhận. Chưa đủ cơ sở: lưu tổng hợp tạm, phần thiếu và yêu cầu bổ sung; không tạo kết luận dự báo chính thức cho phạm vi chưa đủ cơ sở.",
+      "inputs": "Hồ sơ nguồn lực/năng lực V3; lịch, phân bổ, khả năng sẵn sàng V5; cam kết đã duyệt V8 và kết quả xử lý liên quan V7; nhu cầu V2 và nhu cầu dự kiến PM bổ sung; khoảng thời gian theo dõi.",
+      "outputs": "Tổng hợp nguồn cung có thể đáp ứng; kết quả UC-09.2; phân tích đáp ứng/thiếu/dư theo số lượng, vai trò, kỹ năng, thời điểm; quyết định và các nhóm thông tin bàn giao.",
+      "cn": "CN-113–115,120–124; UC-09.2 thực hiện CN-116–119,125–126",
+      "steps": [
+        [
+          "1",
+          "RM",
+          "Mở lần tổng hợp cho khoảng thời gian, theo kỳ tuần hoặc thay đổi đáng kể."
+        ],
+        [
+          "2a",
+          "RM / Hệ thống hỗ trợ",
+          "Tổng hợp nguồn cung hiện tại, khả năng sẵn sàng, lịch/phân bổ và toàn bộ cam kết. Thực hiện song song 2b."
+        ],
+        [
+          "2b",
+          "PM / Hệ thống ghi nhận",
+          "Cung cấp và xác nhận nhu cầu theo dự án, vai trò, kỹ năng, thời gian; lấy từ V2 và bổ sung nhu cầu dự kiến theo I.3.9 bước 2."
+        ],
+        [
+          "3",
+          "RM",
+          "Kiểm tra nguồn cung đủ cơ sở cho phạm vi dự báo. Thiếu thì thực hiện E1; chưa lập dự báo chính thức."
+        ],
+        [
+          "4",
+          "RM / Hệ thống hỗ trợ",
+          "Xác định nguồn cung có thể đáp ứng sau khi trừ đủ phần đã phân bổ hoặc cam kết, kể cả nhiều cam kết đồng thời."
+        ],
+        [
+          "5",
+          "RM / Hệ thống",
+          "Thực hiện UC-09.2 để sàng lọc nhu cầu, lập dự báo và đối chiếu. Nếu không có kết quả đủ cơ sở, thực hiện E2."
+        ],
+        [
+          "6",
+          "RM",
+          "Phân tích thiếu/dư theo số lượng, vai trò, kỹ năng và thời điểm. Tổng số đủ nhưng thiếu người có kỹ năng phù hợp vẫn là thiếu năng lực. Đủ thì ghi nhận đáp ứng."
+        ],
+        [
+          "7",
+          "RM",
+          "Xem thông tin chi phí/đánh đổi V9 làm căn cứ bổ sung khi tổng hợp; không tính lại dự báo bằng chi phí."
+        ],
+        [
+          "8",
+          "RM",
+          "Xét mức ảnh hưởng, quy định quản lý và các trường hợp chuyển nêu ở I.3.9 bước 7; quyết định chuyển kết quả hoặc tiếp tục theo dõi. Ghi quyết định của RM."
+        ],
+        [
+          "9",
+          "Hệ thống theo quyết định RM",
+          "Nếu chuyển: V2 nhận khả năng cung ứng và thiếu/dư; V6 nhận lịch hiện tại và cung còn lại; V7 nhận thiếu/dư và tình trạng cung–cầu; V8 nhận tổng hợp và dự báo. Nếu theo dõi: lưu kết quả chưa chuyển. PM có thể tra cứu. Kết thúc lần chạy."
+        ]
+      ],
+      "alternatives": [
+        [
+          "E1",
+          "3",
+          "Nguồn cung thiếu dữ liệu, chưa đủ cơ sở dự báo.",
+          "Ghi phần thiếu, yêu cầu bổ sung và lưu tổng hợp tạm. Kết thúc lần chạy trước UC-09.2; khi có bổ sung thì mở lại và kiểm tra lại. Chính sách dự báo một phần chờ Q-08."
+        ],
+        [
+          "E2",
+          "5",
+          "UC-09.2 trả chưa có nhu cầu đủ cơ sở hoặc không có kết quả đáng tin cậy.",
+          "Lưu tình trạng đầu vào; chuyển RM/PM xác nhận hoặc bổ sung. Chưa kết luận cầu bằng 0, chưa gửi một dự báo chính thức."
+        ],
+        [
+          "A1",
+          "6",
+          "Tổng số đủ nhưng thiếu vai trò/kỹ năng hoặc lệch thời điểm.",
+          "Ghi thiếu năng lực hoặc thiếu trong khoảng thời gian tương ứng, không ghi đủ chỉ từ tổng số."
+        ],
+        [
+          "A2",
+          "8–9",
+          "RM quyết định tiếp tục theo dõi.",
+          "Lưu quyết định cùng kết quả; không chuyển liên vùng trong lần chạy này. Cách áp dụng điều kiện ở I.3.9 bước 7 chờ Q-09."
+        ],
+        [
+          "A3",
+          "1",
+          "Không có thay đổi đáng kể giữa hai chu kỳ.",
+          "Giữ nguyên dự báo hiện có đến chu kỳ tuần tiếp theo; không tạo lần dự báo ngoài kỳ chỉ để lặp dữ liệu."
+        ]
+      ],
+      "ad": "AD_UC-09.1.png"
+    },
+    {
+      "id": "UC-09.2",
+      "name": "Dự báo cung – cầu nguồn lực",
+      "actor": "RM",
+      "secondary": "Không có actor phụ trực tiếp; PM cung cấp nhu cầu trong UC-09.1.",
+      "goal": "Lập dự báo và đối chiếu cung–cầu trong cùng phạm vi thời gian, phân biệt mức chắc chắn và phần dữ liệu thiếu.",
+      "trigger": "UC-09.1 yêu cầu lập/cập nhật dự báo sau khi đã xác định nguồn cung có thể đáp ứng; đến kỳ tuần hoặc cần cập nhật ngoài chu kỳ theo nguồn.",
+      "pre": "Có khoảng thời gian, nguồn cung có thể đáp ứng từ UC-09.1 và tập nhu cầu do PM cung cấp. Nguồn cung đã qua kiểm tra đủ cơ sở; nhu cầu được sàng lọc trong UC này.",
+      "post": "Thành công: có kết quả dự báo/đối chiếu theo từng khoảng, giữ mức chắc chắn, phạm vi, phần dữ liệu thiếu và các nhu cầu bị loại. Chưa đủ cơ sở: trả tình trạng cần xác nhận/bổ sung cho UC-09.1; không tự kết luận dư nguồn từ dữ liệu rỗng.",
+      "inputs": "Cung có thể đáp ứng, danh sách nhu cầu (V2 và dự kiến), trạng thái, mức chắc chắn, vai trò/kỹ năng, số lượng, thời gian và phạm vi.",
+      "outputs": "KetQuaDuBao, các NhuCauDuBao đủ cơ sở, TongHopNguonCung và DongDoiChieuCungCau theo thời gian; trạng thái nhu cầu chưa đủ cơ sở.",
+      "cn": "CN-116–119,125–126; QT-55–57; PCN-03",
+      "steps": [
+        [
+          "1",
+          "Hệ thống",
+          "Nhận cung có thể đáp ứng, nhu cầu và khoảng thời gian từ UC-09.1."
+        ],
+        [
+          "2",
+          "RM",
+          "Lần lượt xét từng nhu cầu: trạng thái, mức chắc chắn, thời gian và phạm vi. Chưa đủ cơ sở thì A1."
+        ],
+        [
+          "3",
+          "RM / Hệ thống ghi nhận",
+          "Với nhu cầu đủ cơ sở, gắn nhãn đã xác nhận hoặc dự kiến và đưa vào tập dự báo. Chuyển sang nhu cầu tiếp theo; lặp bước 2–3 đến hết tập."
+        ],
+        [
+          "4",
+          "RM",
+          "Kiểm tra có nhu cầu đủ cơ sở. Nếu chưa có, thực hiện E1; không tự coi danh sách rỗng là cầu bằng 0."
+        ],
+        [
+          "5",
+          "RM / Hệ thống hỗ trợ",
+          "Lập dự báo nguồn cung và dự báo nhu cầu theo khoảng thời gian đã xác định; giữ phân biệt đã xác nhận/dự kiến."
+        ],
+        [
+          "6",
+          "RM / Hệ thống hỗ trợ",
+          "Đối chiếu cung–cầu cùng khoảng thời gian; khi lệch thời gian thì đối chiếu từng khoảng và xác định mức đáp ứng/thiếu/dư."
+        ],
+        [
+          "7",
+          "Hệ thống",
+          "Lưu kết quả, mức chắc chắn, phần dữ liệu thiếu/chưa đủ cơ sở và trả UC-09.1 phân tích. Kết thúc lần chạy."
+        ]
+      ],
+      "alternatives": [
+        [
+          "A1",
+          "2",
+          "Một nhu cầu thiếu trạng thái, mức chắc chắn, thời gian hoặc phạm vi.",
+          "Ghi tình trạng/lý do; chưa đưa nhu cầu đó vào dự báo. Tiếp tục xét nhu cầu khác. Kết quả phải thể hiện phần chưa đủ cơ sở, không bỏ dấu vết."
+        ],
+        [
+          "A2",
+          "3",
+          "Nhu cầu dự kiến đủ cơ sở.",
+          "Giữ nhãn dự kiến trong tập dự báo và kết quả; không tự xác nhận như nhu cầu đã duyệt của V2."
+        ],
+        [
+          "E1",
+          "4",
+          "Danh sách rỗng hoặc không có nhu cầu đủ cơ sở.",
+          "Ghi tình trạng đầu vào và trả RM/PM xác nhận cơ sở. Chưa phát kết luận dư nguồn. Cách xác nhận kỳ không phát sinh nhu cầu chờ Q-08."
+        ],
+        [
+          "A3",
+          "1",
+          "Cung/cầu/khoảng thời gian thay đổi đáng kể.",
+          "Nhận dữ liệu cập nhật từ 09.1, dự báo lại ngoài chu kỳ trong một ngày làm việc theo PCN-03; không tự đặt ngưỡng đáng kể."
+        ],
+        [
+          "A4",
+          "1",
+          "Không thay đổi đáng kể.",
+          "Giữ dự báo hiện có đến kỳ tuần tiếp theo theo CN-126; không chạy lại ngoài kỳ."
+        ]
+      ],
+      "ad": "AD_UC-09.2.png"
+    }
+  ],
+  "rules": [
+    [
+      "QT-53–54 / CN-114–115",
+      "Nhu cầu có thể có trước khi bố trí người. Cung có thể đáp ứng phải trừ đủ phân bổ và cam kết đồng thời, theo đúng khoảng thời gian."
+    ],
+    [
+      "QT-55 / CN-116–117",
+      "Xét riêng trạng thái, mức chắc chắn, thời gian, phạm vi. Nhu cầu dự kiến không tự trở thành nhu cầu đã xác nhận; nhu cầu chưa đủ cơ sở được ghi nhận và chưa đưa vào dự báo."
+    ],
+    [
+      "QT-56–57 / CN-125–126 / PCN-03",
+      "Dự báo hàng tuần sau cập nhật lịch V5; cập nhật ngoài kỳ khi có thay đổi đáng kể, trong một ngày làm việc. Không tự định nghĩa ngưỡng “đáng kể”. Không đổi dữ liệu khi không có thay đổi đáng kể, giữ dự báo đến chu kỳ tiếp theo."
+    ],
+    [
+      "QT-57 / CN-124",
+      "Không dùng dữ liệu lịch sử, cơ hội kinh doanh hoặc dữ liệu chi phí V9 làm đầu vào dự báo. V9 chỉ là căn cứ bổ sung khi tổng hợp kết quả."
+    ],
+    [
+      "CN-120–123 / I.1.3.10 / I.3.9",
+      "RM phân tích và quyết định; hệ thống hỗ trợ ghi, tính và chuyển. V10 cung cấp thông tin, không tự bố trí, cân đối hay phê duyệt phương án."
+    ]
+  ],
+  "tests": [
+    [
+      "T01",
+      "Thiếu lịch/cam kết khiến cung chưa đủ cơ sở",
+      "09.1 E1: lưu thiếu, yêu cầu bổ sung, dừng trước dự báo chính thức."
+    ],
+    [
+      "T02",
+      "Một người có hai cam kết trùng thời gian",
+      "09.1 bước 4 trừ đủ cả hai phần; không chỉ lấy một cam kết."
+    ],
+    [
+      "T03",
+      "Có nhu cầu xác nhận, dự kiến và chưa đủ cơ sở",
+      "09.2 giữ hai nhãn khác nhau, ghi lý do loại nhu cầu chưa đủ cơ sở."
+    ],
+    [
+      "T04",
+      "Không có nhu cầu đủ cơ sở",
+      "09.2 E1 và 09.1 E2: trả xác nhận; không tự suy cầu =0 hoặc dư nguồn."
+    ],
+    [
+      "T05",
+      "Tổng số đủ nhưng thiếu kỹ năng, hoặc cung/cầu lệch thời gian",
+      "09.2 đối chiếu từng khoảng; 09.1 ghi đúng thiếu năng lực/thời điểm."
+    ],
+    [
+      "T06",
+      "RM chọn chuyển / theo dõi",
+      "09.1 ghi quyết định RM; chuyển đúng bốn nhóm nơi nhận hoặc giữ kết quả chưa chuyển. Q-09 cần chốt trước tự động hóa."
+    ],
+    [
+      "T07",
+      "V9 thay đổi dữ liệu chi phí",
+      "Chỉ thay căn cứ tổng hợp; không dùng chi phí để tính dự báo cung–cầu."
+    ],
+    [
+      "T08",
+      "Thay đổi đáng kể / không thay đổi ngoài kỳ",
+      "Cập nhật trong một ngày làm việc / giữ đến kỳ tuần sau; không đặt ngưỡng mới."
+    ]
+  ]
+}

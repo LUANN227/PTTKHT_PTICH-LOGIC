@@ -1,0 +1,1290 @@
+{
+ "UC-01.1": [
+  [
+   "Thành phần",
+   "Nội dung"
+  ],
+  [
+   "Tên ca sử dụng",
+   "Xây dựng và hoàn thiện nhu cầu"
+  ],
+  [
+   "ID",
+   "UC-01.1"
+  ],
+  [
+   "Tác nhân liên quan",
+   "PM"
+  ],
+  [
+   "Mục tiêu",
+   "Xác định và hoàn thiện nhu cầu theo loại/vị trí, giai đoạn và mức tham gia; chuyển RM xem xét."
+  ],
+  [
+   "Tiền điều kiện",
+   "Có thông tin dự án và công việc cần nguồn lực."
+  ],
+  [
+   "Luồng chính",
+   "1. PM chọn dự án và xác lập phạm vi công việc.\n2. PM xác định loại nguồn lực, số lượng/quy mô FTE, vai trò, kỹ năng, thời gian hoặc giai đoạn; ghi %FTE khi tham gia một phần.\n3. Hệ thống kiểm tra thông tin và lưu nhu cầu; PM rà soát, hoàn thiện.\n4. PM gửi nhu cầu cho RM xem xét tại UC-01.2; hệ thống ghi nhận việc gửi."
+  ],
+  [
+   "Hậu điều kiện",
+   "Nhu cầu hoàn thiện được gửi RM"
+  ],
+  [
+   "Luồng phụ",
+   "A1 tại bước 1: Thiếu thông tin dự án → PM bổ sung rồi tiếp tục. A2 tại bước 3: Chỉ lưu nháp → lưu nhu cầu đang xây dựng, chưa gửi RM."
+  ],
+  [
+   "Luồng ngoại lệ",
+   "E1 tại bước 3: Mốc thời gian hoặc %FTE không hợp lệ → chỉ rõ trường lỗi, PM sửa và kiểm tra lại; không áp giới hạn tổng nhu cầu ≤1 FTE."
+  ],
+  [
+   "Ràng buộc nghiệp vụ (quy tắc nghiệp vụ)",
+   "QT-01–04; PCN-09: nhu cầu gắn công việc dự án, loại nguồn lực, FTE và thời gian/giai đoạn. %FTE một mức tham gia 0–100%; không đặt tổng nhu cầu ≤1 FTE.\nTruy vết: I FINAL CN-01–09, 11"
+  ]
+ ],
+ "UC-01.2": [
+  [
+   "Thành phần",
+   "Nội dung"
+  ],
+  [
+   "Tên ca sử dụng",
+   "Xác nhận nhu cầu"
+  ],
+  [
+   "ID",
+   "UC-01.2"
+  ],
+  [
+   "Tác nhân liên quan",
+   "RM"
+  ],
+  [
+   "Mục tiêu",
+   "Xem xét, xác nhận hoặc trả PM bổ sung; bàn giao nhu cầu đã xác nhận."
+  ],
+  [
+   "Tiền điều kiện",
+   "Nhu cầu đã được PM gửi và đang chờ RM xem xét."
+  ],
+  [
+   "Luồng chính",
+   "1. RM tiếp nhận nhu cầu PM đã gửi.\n2. RM xem xét phạm vi, loại, quy mô và thời gian; hệ thống cung cấp dữ liệu nhu cầu.\n3. RM xác nhận nhu cầu đủ cơ sở; hệ thống ghi trạng thái Đã xác nhận.\n4. RM yêu cầu bàn giao nhu cầu đã xác nhận cho V3/V4; hệ thống chuyển thông tin."
+  ],
+  [
+   "Hậu điều kiện",
+   "Nhu cầu đã xác nhận hoặc nội dung cần bổ sung"
+  ],
+  [
+   "Luồng phụ",
+   "A1 tại bước 2: Cần bổ sung/điều chỉnh → RM ghi yêu cầu, trả PM qua UC-01.3; nhu cầu chưa được xác nhận. Sau khi PM gửi lại, RM xem xét lại từ bước 2."
+  ],
+  [
+   "Luồng ngoại lệ",
+   "E1 tại bước 1: Không truy được nhu cầu hoặc dữ liệu bắt buộc bị thiếu → ghi nội dung thiếu, yêu cầu bổ sung; chưa bàn giao V3/V4."
+  ],
+  [
+   "Ràng buộc nghiệp vụ (quy tắc nghiệp vụ)",
+   "QT-05; CN-12–16: chỉ RM xác nhận; nhu cầu đã xác nhận mới được bàn giao V3/V4. Khi trả bổ sung, chưa ghi Đã xác nhận.\nTruy vết: I FINAL CN-12–14, 16"
+  ]
+ ],
+ "UC-01.3": [
+  [
+   "Thành phần",
+   "Nội dung"
+  ],
+  [
+   "Tên ca sử dụng",
+   "Điều chỉnh nhu cầu theo phản hồi"
+  ],
+  [
+   "ID",
+   "UC-01.3"
+  ],
+  [
+   "Tác nhân liên quan",
+   "PM"
+  ],
+  [
+   "Mục tiêu",
+   "Xem phản hồi RM/V4/V10, điều chỉnh nhu cầu và gửi RM xem xét lại."
+  ],
+  [
+   "Tiền điều kiện",
+   "Có nhu cầu và phản hồi hoặc thay đổi dự án cần xử lý."
+  ],
+  [
+   "Luồng chính",
+   "1. PM xem phản hồi RM, V4 hoặc V10 và nhu cầu đang có.\n2. PM điều chỉnh phạm vi, số lượng/quy mô, vai trò/kỹ năng hoặc thời gian theo phản hồi.\n3. Hệ thống kiểm tra và lưu nội dung điều chỉnh.\n4. PM gửi lại RM để xem xét ở UC-01.2; hệ thống ghi nhận, không tự xác nhận."
+  ],
+  [
+   "Hậu điều kiện",
+   "Nhu cầu được cập nhật, chưa tự coi là đã xác nhận"
+  ],
+  [
+   "Luồng phụ",
+   "A1 tại bước 1: Phản hồi từ V4/V10 → ghi nguồn và lý do điều chỉnh; vẫn gửi RM xem xét sau sửa."
+  ],
+  [
+   "Luồng ngoại lệ",
+   "E1 tại bước 3: Nội dung điều chỉnh thiếu hoặc không hợp lệ → PM bổ sung, kiểm tra lại; giữ kết quả chưa xác nhận."
+  ],
+  [
+   "Ràng buộc nghiệp vụ (quy tắc nghiệp vụ)",
+   "QT-04–05; CN-10,14–17: thay đổi phải được rà soát; PM sửa không tự thay việc RM xem xét và xác nhận lại.\nTruy vết: I FINAL CN-10, 15, 17"
+  ]
+ ],
+ "UC-02.1": [
+  [
+   "Thành phần",
+   "Nội dung"
+  ],
+  [
+   "Tên ca sử dụng",
+   "Quản lý tiêu chí đánh giá năng lực"
+  ],
+  [
+   "ID",
+   "UC-02.1"
+  ],
+  [
+   "Tác nhân liên quan",
+   "RM; PMO"
+  ],
+  [
+   "Mục tiêu",
+   "Duy trì kỹ năng, tiêu chí, thang 5 mức; tiêu chí tạm chỉ dùng sau PMO duyệt."
+  ],
+  [
+   "Tiền điều kiện",
+   "RM có quyền quản lý bộ tiêu chí; có thông tin kỹ năng/vai trò cần đánh giá."
+  ],
+  [
+   "Luồng chính",
+   "1. RM xem danh mục kỹ năng, tiêu chí và mô tả thang 5 mức.\n2. RM bổ sung/cập nhật tiêu chí năng lực dùng cho các vai trò.\n3. Nếu là tiêu chí tạm, RM gửi PMO xét duyệt; PMO duyệt hoặc từ chối.\n4. Hệ thống lưu tiêu chí và tình trạng phê duyệt; chỉ cung cấp tiêu chí được phép sử dụng cho UC-02.2."
+  ],
+  [
+   "Hậu điều kiện",
+   "Bộ tiêu chí sử dụng được; tình trạng tiêu chí tạm"
+  ],
+  [
+   "Luồng phụ",
+   "A1 tại bước 3: PMO từ chối tiêu chí tạm → ghi lý do, RM sửa và trình lại hoặc không sử dụng."
+  ],
+  [
+   "Luồng ngoại lệ",
+   "E1 tại bước 4: Tiêu chí tạm chưa được duyệt → chưa đưa vào bộ dùng để đánh giá."
+  ],
+  [
+   "Ràng buộc nghiệp vụ (quy tắc nghiệp vụ)",
+   "QT-06; CN-18–19; PCN-09: thang 5 mức, tiêu chí dùng trước khi đánh giá. Tiêu chí tạm chỉ được sử dụng sau PMO duyệt.\nTruy vết: I FINAL CN-18–19"
+  ]
+ ],
+ "UC-02.2": [
+  [
+   "Thành phần",
+   "Nội dung"
+  ],
+  [
+   "Tên ca sử dụng",
+   "Đánh giá năng lực nguồn lực"
+  ],
+  [
+   "ID",
+   "UC-02.2"
+  ],
+  [
+   "Tác nhân liên quan",
+   "RM; Nguồn lực"
+  ],
+  [
+   "Mục tiêu",
+   "Đánh giá từng kỹ năng, mức tin cậy, chứng chỉ và khoảng thiếu so với vai trò."
+  ],
+  [
+   "Tiền điều kiện",
+   "Có tiêu chí sử dụng được và nguồn lực cần đánh giá."
+  ],
+  [
+   "Luồng chính",
+   "1. Nguồn lực khai báo kỹ năng, kinh nghiệm và chứng chỉ.\n2. RM đối chiếu với tiêu chí đã xác lập, xác minh căn cứ và đánh giá từng kỹ năng theo thang 5 mức.\n3. RM ghi mức thành thạo, trạng thái xác nhận và phần còn thiếu; hệ thống lưu kết quả.\n4. RM đối chiếu yêu cầu vai trò, xác định mức đáp ứng/khoảng thiếu và chuyển kết quả sang UC-02.3."
+  ],
+  [
+   "Hậu điều kiện",
+   "Kết quả đánh giá và trạng thái năng lực"
+  ],
+  [
+   "Luồng phụ",
+   "A1 tại bước 2: Thiếu căn cứ xác minh → ghi trạng thái Cần kiểm chứng và thông tin cần bổ sung; không công nhận là Đã xác nhận."
+  ],
+  [
+   "Luồng ngoại lệ",
+   "E1 tại bước 2: Chứng chỉ hết hiệu lực hoặc không phù hợp → không dùng làm căn cứ xác nhận; ghi nhận và yêu cầu căn cứ khác."
+  ],
+  [
+   "Ràng buộc nghiệp vụ (quy tắc nghiệp vụ)",
+   "QT-06–10; CN-20–27: phân biệt kỹ năng và mức thành thạo; căn cứ kinh nghiệm/chứng chỉ phải được xem xét. Tách tự khai, cần kiểm chứng, đã xác nhận và phần còn thiếu.\nTruy vết: I FINAL CN-20–27"
+  ]
+ ],
+ "UC-02.3": [
+  [
+   "Thành phần",
+   "Nội dung"
+  ],
+  [
+   "Tên ca sử dụng",
+   "Xác nhận và cập nhật hồ sơ năng lực"
+  ],
+  [
+   "ID",
+   "UC-02.3"
+  ],
+  [
+   "Tác nhân liên quan",
+   "RM; PMO"
+  ],
+  [
+   "Mục tiêu",
+   "Xác nhận kết quả, xử lý xác nhận cuối khi tranh chấp; lưu và tra cứu hồ sơ tập trung."
+  ],
+  [
+   "Tiền điều kiện",
+   "Có kết quả đánh giá và các căn cứ tương ứng."
+  ],
+  [
+   "Luồng chính",
+   "1. RM xem kết quả và căn cứ đánh giá.\n2. RM xác nhận các kết quả đủ cơ sở; trường hợp tranh chấp chuyển PMO xác nhận cuối.\n3. Hệ thống ghi kết quả xác nhận theo từng kỹ năng và cập nhật hồ sơ năng lực tập trung.\n4. RM hoặc người có quyền tra cứu hồ sơ; các vùng khác dùng chung kết quả."
+  ],
+  [
+   "Hậu điều kiện",
+   "Hồ sơ năng lực được cập nhật"
+  ],
+  [
+   "Luồng phụ",
+   "A1 tại bước 2: Tranh chấp → PMO xem xét và ghi kết luận cuối; hệ thống lưu người xác nhận."
+  ],
+  [
+   "Luồng ngoại lệ",
+   "E1 tại bước 2: Chưa đủ thông tin → giữ phần chưa xác nhận, ghi yêu cầu bổ sung; không đồng nhất toàn bộ hồ sơ là đã xác nhận."
+  ],
+  [
+   "Ràng buộc nghiệp vụ (quy tắc nghiệp vụ)",
+   "QT-10–11; CN-28–30; PCN-02/08: xác nhận theo căn cứ, PMO xác nhận cuối khi tranh chấp; lưu hồ sơ tập trung và tra cứu theo quyền. Kết quả không phải quyết định phân công.\nTruy vết: I FINAL CN-28–30"
+  ]
+ ],
+ "UC-03.1": [
+  [
+   "Thành phần",
+   "Nội dung"
+  ],
+  [
+   "Tên ca sử dụng",
+   "Xác lập tiêu chí tìm kiếm và đánh giá"
+  ],
+  [
+   "ID",
+   "UC-03.1"
+  ],
+  [
+   "Tác nhân liên quan",
+   "RM"
+  ],
+  [
+   "Mục tiêu",
+   "Tiếp nhận nhu cầu đã xác nhận; lập điều kiện, tiêu chí và trọng số riêng cho nhu cầu."
+  ],
+  [
+   "Tiền điều kiện",
+   "Nhu cầu đã được RM xác nhận."
+  ],
+  [
+   "Luồng chính",
+   "1. RM chọn nhu cầu đã xác nhận.\n2. RM xác định điều kiện bắt buộc, tiêu chí đánh giá và trọng số riêng cho nhu cầu.\n3. Hệ thống kiểm tra, lưu bộ tiêu chí cùng phiên bản áp dụng.\n4. RM sử dụng bộ tiêu chí để tìm kiếm và đánh giá ở UC-03.2/03.3."
+  ],
+  [
+   "Hậu điều kiện",
+   "Bộ tiêu chí phù hợp cho nhu cầu"
+  ],
+  [
+   "Luồng phụ",
+   "A1 tại bước 2: Tiêu chí cần thay đổi → lưu phiên bản sử dụng cho lần đánh giá, không sửa mất căn cứ của kết quả cũ."
+  ],
+  [
+   "Luồng ngoại lệ",
+   "E1 tại bước 1: Nhu cầu chưa xác nhận → chưa thực hiện tìm kiếm/đánh giá."
+  ],
+  [
+   "Ràng buộc nghiệp vụ (quy tắc nghiệp vụ)",
+   "QT-12,16,19: nhu cầu phải đã xác nhận; tiêu chí/trọng số xác lập cho từng nhu cầu; lưu căn cứ và phiên bản dùng trong lần đánh giá.\nTruy vết: I FINAL CN-31–32"
+  ]
+ ],
+ "UC-03.2": [
+  [
+   "Thành phần",
+   "Nội dung"
+  ],
+  [
+   "Tên ca sử dụng",
+   "Tìm kiếm ứng viên"
+  ],
+  [
+   "ID",
+   "UC-03.2"
+  ],
+  [
+   "Tác nhân liên quan",
+   "RM"
+  ],
+  [
+   "Mục tiêu",
+   "Tìm ứng viên theo thứ tự nội bộ, cộng tác viên/đối tác, tuyển ngoài; mở rộng khi nguồn trước không đủ."
+  ],
+  [
+   "Tiền điều kiện",
+   "Có nhu cầu đã xác nhận và bộ tiêu chí của nhu cầu."
+  ],
+  [
+   "Luồng chính",
+   "1. RM chọn nhu cầu và bộ tiêu chí tìm kiếm.\n2. RM tìm ứng viên từ nguồn nội bộ; hệ thống cung cấp hồ sơ tập trung.\n3. Nếu chưa đủ ứng viên, RM mở rộng lần lượt sang cộng tác viên/đối tác rồi tuyển ngoài theo thứ tự nguồn.\n4. Hệ thống lưu danh sách và căn cứ tìm kiếm; RM chuyển UC-03.3 đánh giá."
+  ],
+  [
+   "Hậu điều kiện",
+   "Danh sách ứng viên"
+  ],
+  [
+   "Luồng phụ",
+   "A1 tại bước 3: Nguồn hiện tại chưa đủ → thử nguồn tiếp theo, không bỏ qua thứ tự ưu tiên."
+  ],
+  [
+   "Luồng ngoại lệ",
+   "E1 tại bước 3: Đã thử các cách vẫn không đáp ứng → RM ghi lý do và phản hồi V2 theo CN-46; không tạo shortlist rỗng như kết quả đạt."
+  ],
+  [
+   "Ràng buộc nghiệp vụ (quy tắc nghiệp vụ)",
+   "QT-12,16,18; CN-33,46: tìm theo thứ tự nội bộ → cộng tác viên/đối tác → tuyển ngoài; mở rộng khi chưa đủ, lưu căn cứ; phản hồi khi đã thử các cách vẫn không đáp ứng.\nTruy vết: I FINAL CN-33"
+  ]
+ ],
+ "UC-03.3": [
+  [
+   "Thành phần",
+   "Nội dung"
+  ],
+  [
+   "Tên ca sử dụng",
+   "Đánh giá, xếp hạng và lập shortlist ứng viên"
+  ],
+  [
+   "ID",
+   "UC-03.3"
+  ],
+  [
+   "Tác nhân liên quan",
+   "RM; PMO"
+  ],
+  [
+   "Mục tiêu",
+   "Đối chiếu điều kiện, miễn trừ có duyệt, chấm điểm, xếp hạng, lập shortlist; phản hồi V2 khi cạn cách xử lý."
+  ],
+  [
+   "Tiền điều kiện",
+   "Nhu cầu đã xác nhận; có bộ tiêu chí/trọng số và ứng viên; hồ sơ năng lực tra cứu được."
+  ],
+  [
+   "Luồng chính",
+   "1. RM chọn nhu cầu và danh sách ứng viên; hệ thống kiểm tra tiền điều kiện.\n2. RM đối chiếu điều kiện bắt buộc, loại xung đột lợi ích; hệ thống ghi phân loại/lý do và cảnh báo độ tin cậy kỹ năng.\n3. RM đề nghị PMO miễn trừ nếu cần; chỉ ứng viên đủ điều kiện hoặc được miễn trừ hợp lệ được chấm điểm.\n4. RM chấm từng tiêu chí; hệ thống tính điểm trọng số và xếp hạng, xử lý đồng hạng theo thứ tự nguồn.\n5. RM lập shortlist tối thiểu một ứng viên chính, rà soát mức đáp ứng/khoảng thiếu và xác nhận; hệ thống lưu căn cứ và kết quả.\n6. RM chuyển kết quả cho V5; nếu không có ứng viên đạt thì quay tìm nguồn, khi cạn cách xử lý phản hồi V2."
+  ],
+  [
+   "Hậu điều kiện",
+   "Kết quả đánh giá, shortlist hoặc phản hồi không đáp ứng"
+  ],
+  [
+   "Luồng phụ",
+   "A1 tại bước 3: Không đạt điều kiện bắt buộc nhưng đề nghị miễn trừ → PMO duyệt/từ chối, ghi điều kiện được miễn, lý do và người duyệt. A2 tại bước 5: Chỉ một ứng viên đạt → shortlist một ứng viên chính; 1–2 thay thế là khuyến nghị."
+  ],
+  [
+   "Luồng ngoại lệ",
+   "E1 tại bước 1: Thiếu tiền điều kiện → dừng và hoàn thiện tại UC-03.1/03.2. E2 tại bước 2: Xung đột lợi ích → loại ứng viên, không dùng miễn trừ để bỏ qua QT-14. E3 tại bước 6: Không có ứng viên đạt → chưa lập shortlist."
+  ],
+  [
+   "Ràng buộc nghiệp vụ (quy tắc nghiệp vụ)",
+   "QT-12–19; CN-34–42,44–46: loại xung đột lợi ích; miễn trừ có duyệt; cảnh báo kỹ năng chưa xác nhận/quá hạn; chấm theo trọng số. Shortlist ít nhất một chính, 1–2 thay thế là khuyến nghị. Chuyên môn khác khả năng tham gia (QT-20).\nTruy vết: I FINAL CN-34–42, 44–46"
+  ]
+ ],
+ "UC-03.4": [
+  [
+   "Thành phần",
+   "Nội dung"
+  ],
+  [
+   "Tên ca sử dụng",
+   "Điều chỉnh kết quả đánh giá"
+  ],
+  [
+   "ID",
+   "UC-03.4"
+  ],
+  [
+   "Tác nhân liên quan",
+   "RM; PMO"
+  ],
+  [
+   "Mục tiêu",
+   "Điều chỉnh xếp hạng/shortlist có lý do; chỉ có hiệu lực sau PMO phê duyệt."
+  ],
+  [
+   "Tiền điều kiện",
+   "Có kết quả đánh giá và lý do điều chỉnh."
+  ],
+  [
+   "Luồng chính",
+   "1. RM chọn kết quả xếp hạng/shortlist cần điều chỉnh.\n2. RM ghi nội dung điều chỉnh và lý do.\n3. PMO xem xét và phê duyệt hoặc từ chối điều chỉnh thủ công.\n4. Hệ thống lưu người duyệt, lý do và kết quả; chỉ áp dụng điều chỉnh khi được duyệt."
+  ],
+  [
+   "Hậu điều kiện",
+   "Kết quả điều chỉnh được duyệt và lưu vết"
+  ],
+  [
+   "Luồng phụ",
+   "A1 tại bước 3: Không duyệt → giữ kết quả hiện có, ghi lý do."
+  ],
+  [
+   "Luồng ngoại lệ",
+   "E1 tại bước 2: Thiếu lý do hoặc chưa được duyệt → chưa thay kết quả có hiệu lực."
+  ],
+  [
+   "Ràng buộc nghiệp vụ (quy tắc nghiệp vụ)",
+   "QT-13,16; CN-43; PCN-07: mọi điều chỉnh thủ công có lý do, người duyệt và lưu vết. Chưa duyệt thì chưa thay kết quả có hiệu lực.\nTruy vết: I FINAL CN-43"
+  ]
+ ],
+ "UC-04.1": [
+  [
+   "Thành phần",
+   "Nội dung"
+  ],
+  [
+   "Tên ca sử dụng",
+   "Đánh giá khả năng tham gia"
+  ],
+  [
+   "ID",
+   "UC-04.1"
+  ],
+  [
+   "Tác nhân liên quan",
+   "RM; PM"
+  ],
+  [
+   "Mục tiêu",
+   "PM gửi yêu cầu theo thời gian; RM đánh giá từng ứng viên, ghi trạng thái/căn cứ và chuyển đúng nơi."
+  ],
+  [
+   "Tiền điều kiện",
+   "Có shortlist hoặc ứng viên cần xem xét và khoảng thời gian từ PM."
+  ],
+  [
+   "Luồng chính",
+   "1. PM gửi yêu cầu theo thời gian; RM chọn ứng viên và khoảng thời gian đánh giá.\n2. RM tra cứu lịch tập trung, nghỉ, thời gian không tính phí, phân bổ cứng và độ mới dữ liệu; hệ thống tính năng lực khả dụng/mức sử dụng.\n3. RM đánh giá từng ứng viên, ghi trạng thái Có thể tham gia, Có thể tham gia một phần, Không thể tham gia hoặc Chưa đủ rõ cùng căn cứ.\n4. RM xử lý xác nhận dữ liệu thiếu; nếu một phần chuyển UC-04.2, nếu vượt tải ngoại lệ chuyển UC-04.3.\n5. Hệ thống lưu kết luận, thời hạn/cờ rủi ro; RM chuyển kết quả đúng vùng, không tự quyết định ưu tiên xung đột."
+  ],
+  [
+   "Hậu điều kiện",
+   "Kết luận khả năng tham gia; trường hợp cần xác minh/chuyển xử lý"
+  ],
+  [
+   "Luồng phụ",
+   "A1 tại bước 4: Lịch chưa đủ rõ → RM chọn chờ xác nhận 2 ngày làm việc hoặc không chờ, ghi chưa có dữ liệu và yêu cầu xác nhận ngay. A2 tại bước 2: Khẩn → đánh giá nhanh trên phân bổ cứng theo CN-58."
+  ],
+  [
+   "Luồng ngoại lệ",
+   "E1 tại bước 3: Không đủ cơ sở → giữ Chưa đủ rõ; không bàn giao như kết luận đã hoàn tất. E2 tại bước 5: Rủi ro >90% trên 2 tuần → gắn cờ Mức 2, không tự kích hoạt V7."
+  ],
+  [
+   "Ràng buộc nghiệp vụ (quy tắc nghiệp vụ)",
+   "QT-20–22,24,26; CN-50,52,58: trừ nghỉ/không tính phí/phân bổ cứng; lịch quá 7 ngày chưa đủ rõ. >90% trên 2 tuần là cờ rủi ro Mức 2, không tự kích hoạt V7. Thiếu dữ liệu có nhánh chờ xác nhận 2 ngày làm việc hoặc không chờ.\nTruy vết: I FINAL CN-47–52, 55, 58–59, 127"
+  ]
+ ],
+ "UC-04.2": [
+  [
+   "Thành phần",
+   "Nội dung"
+  ],
+  [
+   "Tên ca sử dụng",
+   "Xử lý phương án tham gia một phần"
+  ],
+  [
+   "ID",
+   "UC-04.2"
+  ],
+  [
+   "Tác nhân liên quan",
+   "RM; PM"
+  ],
+  [
+   "Mục tiêu",
+   "RM đề xuất tỷ lệ/khung thời gian; PM xác nhận hoặc từ chối phương án một phần."
+  ],
+  [
+   "Tiền điều kiện",
+   "Có kết luận Có thể tham gia một phần."
+  ],
+  [
+   "Luồng chính",
+   "1. RM chọn kết luận chỉ đáp ứng một phần.\n2. RM đề xuất tỷ lệ tham gia và khung thời gian.\n3. PM xác nhận không ảnh hưởng nghiêm trọng hoặc từ chối đề xuất.\n4. Hệ thống ghi phản hồi PM; RM chuyển kết quả được chấp nhận cho bước xây dựng phương án hoặc tìm hướng khác."
+  ],
+  [
+   "Hậu điều kiện",
+   "Kết quả xác nhận và hướng xử lý tiếp theo"
+  ],
+  [
+   "Luồng phụ",
+   "A1 tại bước 3: PM từ chối → ghi lý do, RM sửa đề xuất hoặc tìm ứng viên khác."
+  ],
+  [
+   "Luồng ngoại lệ",
+   "E1 tại bước 3: Chưa có xác nhận PM → chưa coi phân bổ một phần là được chấp nhận."
+  ],
+  [
+   "Ràng buộc nghiệp vụ (quy tắc nghiệp vụ)",
+   "QT-23; CN-53–54: PM xác nhận tham gia một phần không ảnh hưởng nghiêm trọng; chưa có xác nhận thì chưa coi là chấp nhận.\nTruy vết: I FINAL CN-53–54"
+  ]
+ ],
+ "UC-04.3": [
+  [
+   "Thành phần",
+   "Nội dung"
+  ],
+  [
+   "Tên ca sử dụng",
+   "Xử lý trường hợp vượt tải ngoại lệ"
+  ],
+  [
+   "ID",
+   "UC-04.3"
+  ],
+  [
+   "Tác nhân liên quan",
+   "RM; PMO; CEO"
+  ],
+  [
+   "Mục tiêu",
+   "Ghi nhận hồ sơ vượt tải ngoại lệ, chuyển và phê duyệt theo mức, điều kiện, thời hạn, kế hoạch giảm tải."
+  ],
+  [
+   "Tiền điều kiện",
+   "Có trường hợp vượt tải cần xem xét ngoại lệ và căn cứ tải."
+  ],
+  [
+   "Luồng chính",
+   "1. RM lập hồ sơ ngoại lệ vượt tải kèm lý do, thời hạn và kế hoạch giảm tải.\n2. RM xác định cấp xử lý theo mức và điều kiện DoA.\n3. PMO xem xét Mức 2–3; trường hợp Mức 4–5 hoặc điều kiện buộc CEO thì chuyển CEO quyết định.\n4. Hệ thống lưu quyết định/người/thời điểm và điều kiện; RM chuyển kết quả cho vùng lập phương án."
+  ],
+  [
+   "Hậu điều kiện",
+   "Quyết định ngoại lệ và điều kiện áp dụng"
+  ],
+  [
+   "Luồng phụ",
+   "A1 tại bước 3: Không được duyệt → giữ kết luận không được bố trí theo ngoại lệ, tìm phương án khác."
+  ],
+  [
+   "Luồng ngoại lệ",
+   "E1 tại bước 1: Thiếu thời hạn hoặc kế hoạch giảm tải → yêu cầu bổ sung; chưa áp dụng ngoại lệ."
+  ],
+  [
+   "Ràng buộc nghiệp vụ (quy tắc nghiệp vụ)",
+   "QT-25; CN-56–57; QT-40–41: ngoại lệ có hạn và kế hoạch giảm tải; đúng cấp DoA; >110% kéo dài >2 tuần bắt buộc CEO phê duyệt ngoại lệ.\nTruy vết: I FINAL CN-56–57"
+  ]
+ ],
+ "UC-05.1": [
+  [
+   "Thành phần",
+   "Nội dung"
+  ],
+  [
+   "Tên ca sử dụng",
+   "Xây dựng phương án bố trí"
+  ],
+  [
+   "ID",
+   "UC-05.1"
+  ],
+  [
+   "Tác nhân liên quan",
+   "RM"
+  ],
+  [
+   "Mục tiêu",
+   "Chọn người–vị trí–giai đoạn; xây dựng phương án chính/thay thế, rủi ro và gửi PM; theo dõi hạn đang xây dựng."
+  ],
+  [
+   "Tiền điều kiện",
+   "Có nhu cầu đã xác nhận, ứng viên và thông tin khả năng tham gia."
+  ],
+  [
+   "Luồng chính",
+   "1. RM chọn nhu cầu, ứng viên phù hợp và kết luận khả năng tham gia.\n2. RM gán người vào vị trí theo từng giai đoạn, tỷ lệ và thời gian; hệ thống hỗ trợ kiểm tra.\n3. RM lập phương án chính/thay thế, đánh dấu vị trí nghi ngờ xung đột và ghi biện pháp giảm thiểu rủi ro.\n4. RM hoàn thiện phương án và gửi PM; hệ thống ghi phiên bản, ngày bắt đầu xây dựng và ngày gửi."
+  ],
+  [
+   "Hậu điều kiện",
+   "Phương án dự thảo đã gửi PM"
+  ],
+  [
+   "Luồng phụ",
+   "A1 tại bước 3: Chỉ một ứng viên cho vị trí → kèm phương án thay thế hoặc biện pháp giảm thiểu. A2: Nhận phản hồi sửa → cập nhật phương án và gửi lại PM."
+  ],
+  [
+   "Luồng ngoại lệ",
+   "E1: Đang xây dựng quá 3 ngày làm việc → RM báo lý do cho PMO. E2: Tổng tham gia >100% chưa có ngoại lệ → chưa hợp thức hóa phân bổ; đánh dấu và chuyển xử lý đúng vùng."
+  ],
+  [
+   "Ràng buộc nghiệp vụ (quy tắc nghiệp vụ)",
+   "QT-27–31: tổng tham gia ≤100% trừ ngoại lệ; vị trí chỉ một ứng viên có thay thế/giảm thiểu; bố trí theo giai đoạn; giữ dấu nghi ngờ xung đột. Đang xây dựng tối đa 3 ngày làm việc.\nTruy vết: I FINAL CN-60–68; 73 theo trạng thái"
+  ]
+ ],
+ "UC-05.2": [
+  [
+   "Thành phần",
+   "Nội dung"
+  ],
+  [
+   "Tên ca sử dụng",
+   "Rà soát phương án bố trí"
+  ],
+  [
+   "ID",
+   "UC-05.2"
+  ],
+  [
+   "Tác nhân liên quan",
+   "PM; RM"
+  ],
+  [
+   "Mục tiêu",
+   "PM rà soát/xác nhận hoặc yêu cầu sửa; RM đối chiếu lịch/tải và chuyển V7 hoặc V8, V9."
+  ],
+  [
+   "Tiền điều kiện",
+   "Có phương án đã gửi PM."
+  ],
+  [
+   "Luồng chính",
+   "1. PM xem phương án RM gửi.\n2. PM xác nhận phương án hoặc ghi yêu cầu sửa; RM cập nhật nếu có yêu cầu.\n3. RM đối chiếu lịch/tải, giữ rõ các vị trí nghi ngờ trùng lịch/vượt tải.\n4. RM chuyển V7 nếu nghi ngờ xung đột; nếu không thì chuyển V8 và V9 theo quy trình."
+  ],
+  [
+   "Hậu điều kiện",
+   "Phản hồi sửa hoặc phương án chuyển xử lý tiếp"
+  ],
+  [
+   "Luồng phụ",
+   "A1 tại bước 2: Cần sửa → ghi vị trí/lý do, trả UC-05.1; chưa coi là phê duyệt chính thức."
+  ],
+  [
+   "Luồng ngoại lệ",
+   "E1 tại bước 3: Thiếu dữ liệu lịch/tải → bổ sung/xác minh, không kết luận không có xung đột chỉ vì dữ liệu trống."
+  ],
+  [
+   "Ràng buộc nghiệp vụ (quy tắc nghiệp vụ)",
+   "QT-27,30; CN-69–72: PM rà soát/xác nhận, RM kiểm tra tải/lịch và chuyển đúng vùng; đây chưa phải phê duyệt Locked Baseline.\nTruy vết: I FINAL CN-69–72; tham chiếu 73"
+  ]
+ ],
+ "UC-06.1": [
+  [
+   "Thành phần",
+   "Nội dung"
+  ],
+  [
+   "Tên ca sử dụng",
+   "Phân tích và đánh giá xung đột"
+  ],
+  [
+   "ID",
+   "UC-06.1"
+  ],
+  [
+   "Tác nhân liên quan",
+   "RM; PM"
+  ],
+  [
+   "Mục tiêu",
+   "Phân tích xung đột, mức ảnh hưởng và căn cứ ưu tiên; phân biệt nghi ngờ với xung đột thực tế."
+  ],
+  [
+   "Tiền điều kiện",
+   "Có tình huống trùng lịch/vượt tải hoặc ảnh hưởng cần phân tích."
+  ],
+  [
+   "Luồng chính",
+   "1. RM tiếp nhận tình huống nghi ngờ xung đột và các phương án liên quan.\n2. RM/PM đối chiếu lịch, mức sử dụng, tác động và cam kết hiện có.\n3. RM xác định đủ điều kiện kích hoạt xử lý chính thức hay chỉ theo dõi; giữ phân bổ cứng và thứ tự ưu tiên theo quy định.\n4. Hệ thống ghi kết quả phân tích; trường hợp cần xử lý chuyển UC-06.2."
+  ],
+  [
+   "Hậu điều kiện",
+   "Kết quả phân tích, tình huống cần cân đối"
+  ],
+  [
+   "Luồng phụ",
+   "A1 tại bước 3: Dưới điều kiện kích hoạt chính thức → ghi nhận để theo dõi."
+  ],
+  [
+   "Luồng ngoại lệ",
+   "E1 tại bước 2: Dữ liệu chưa đủ → ghi tình trạng, xác minh; chưa kết luận xung đột thực tế."
+  ],
+  [
+   "Ràng buộc nghiệp vụ (quy tắc nghiệp vụ)",
+   "QT-33–34; CN-74–77: chỉ kích hoạt chính thức khi đủ điều kiện nguồn; dưới điều kiện thì theo dõi. Ưu tiên phân bổ cứng trước, ngang nhau mới xét danh mục/giá trị kinh doanh.\nTruy vết: I FINAL CN-74–77; 87–88 dùng chung"
+  ]
+ ],
+ "UC-06.2": [
+  [
+   "Thành phần",
+   "Nội dung"
+  ],
+  [
+   "Tên ca sử dụng",
+   "Cân đối nguồn lực"
+  ],
+  [
+   "ID",
+   "UC-06.2"
+  ],
+  [
+   "Tác nhân liên quan",
+   "RM; PM"
+  ],
+  [
+   "Mục tiêu",
+   "PM đàm phán, RM điều phối, làm mịn/san bằng; ghi đề xuất thay đổi và chuyển đúng cấp khi cần."
+  ],
+  [
+   "Tiền điều kiện",
+   "Có phân tích xung đột và đủ điều kiện xử lý chính thức."
+  ],
+  [
+   "Luồng chính",
+   "1. RM chuẩn bị thông tin xung đột và điều phối các PM liên quan.\n2. PM đàm phán phương án cân đối; RM hỗ trợ và hệ thống ghi nhật ký.\n3. RM/PM xem xét làm mịn trong khoảng dự trữ hoặc san bằng có đề xuất thay đổi theo điều kiện nghiệp vụ.\n4. Hệ thống ghi kết quả; RM chuyển V6 cập nhật phương án hoặc V8 xem xét đề xuất thay đổi.\n5. Nếu hết thời hạn/bế tắc, RM chuyển UC-06.3; không tự thay người có thẩm quyền phân xử."
+  ],
+  [
+   "Hậu điều kiện",
+   "Kết quả cân đối, nhật ký và đề xuất thay đổi nếu có"
+  ],
+  [
+   "Luồng phụ",
+   "A1 tại bước 3: Làm mịn đủ xử lý → giữ mốc gốc. A2: San bằng ảnh hưởng mốc/phạm vi → lập đề xuất thay đổi, chuyển V8/CCB theo QT-39."
+  ],
+  [
+   "Luồng ngoại lệ",
+   "E1 tại bước 5: PM không thống nhất trong 3 ngày làm việc hoặc bế tắc → ghi căn cứ và chuyển cấp; không tự chia 50/50."
+  ],
+  [
+   "Ràng buộc nghiệp vụ (quy tắc nghiệp vụ)",
+   "QT-35–39; CN-78–82,86–88: làm mịn trong khoảng dự trữ; PM đàm phán tối đa 3 ngày làm việc; san bằng ảnh hưởng mốc/phạm vi phải kiểm soát thay đổi; mọi xử lý ghi nhật ký.\nTruy vết: I FINAL CN-78–82, 86; 87–88 dùng chung"
+  ]
+ ],
+ "UC-06.3": [
+  [
+   "Thành phần",
+   "Nội dung"
+  ],
+  [
+   "Tên ca sử dụng",
+   "Phân xử xung đột"
+  ],
+  [
+   "ID",
+   "UC-06.3"
+  ],
+  [
+   "Tác nhân liên quan",
+   "RM; PMO; CEO"
+  ],
+  [
+   "Mục tiêu",
+   "Chuyển cấp khi hết hạn/bế tắc; người có thẩm quyền phân xử và ghi quyết định."
+  ],
+  [
+   "Tiền điều kiện",
+   "Có hồ sơ chuyển cấp từ UC-06.2."
+  ],
+  [
+   "Luồng chính",
+   "1. RM chuyển hồ sơ phân xử với nhật ký và căn cứ ưu tiên.\n2. PMO/CEO tiếp nhận theo thẩm quyền; xem phân bổ cứng, thứ tự danh mục và giá trị kinh doanh.\n3. Người có thẩm quyền ra quyết định; hệ thống ghi người, thời điểm, nội dung.\n4. RM chuyển quyết định để cập nhật phương án và nhật ký."
+  ],
+  [
+   "Hậu điều kiện",
+   "Quyết định phân xử và kết quả bàn giao"
+  ],
+  [
+   "Luồng phụ",
+   "A1 tại bước 2: Chạm Mức 4–5 → CEO xử lý; PMO quyết định trong 1 ngày làm việc từ khi nhận hồ sơ thuộc thẩm quyền."
+  ],
+  [
+   "Luồng ngoại lệ",
+   "E1 tại bước 2: Thiếu căn cứ → yêu cầu bổ sung; hồ sơ không tự sinh quyết định phân xử."
+  ],
+  [
+   "Ràng buộc nghiệp vụ (quy tắc nghiệp vụ)",
+   "QT-34,36–39; CN-83–85: PMO quyết định trong 1 ngày làm việc từ nhận hồ sơ; Mức 4–5 chuyển CEO. Đúng căn cứ ưu tiên, lưu người/quyết định; hồ sơ không tự phân xử.\nTruy vết: I FINAL CN-83–85; 87–88 dùng chung"
+  ]
+ ],
+ "UC-07.1": [
+  [
+   "Thành phần",
+   "Nội dung"
+  ],
+  [
+   "Tên ca sử dụng",
+   "Rà soát và đánh giá phương án"
+  ],
+  [
+   "ID",
+   "UC-07.1"
+  ],
+  [
+   "Tác nhân liên quan",
+   "PMO; CEO"
+  ],
+  [
+   "Mục tiêu",
+   "Tiếp nhận, đối chiếu DoA, rà soát hồ sơ cùng thông tin V9/V10; kết luận đủ cơ sở hay cần giải trình."
+  ],
+  [
+   "Tiền điều kiện",
+   "Có hồ sơ phương án từ V6/V7."
+  ],
+  [
+   "Luồng chính",
+   "1. PMO/CEO tiếp nhận hồ sơ phương án.\n2. PMO đối chiếu DoA; hệ thống cung cấp hồ sơ, chi phí V9 và thông tin dự báo V10.\n3. Người rà soát xem tính đầy đủ, rủi ro và căn cứ; ghi kết quả rà soát.\n4. Đủ cơ sở thì chuyển UC-07.3 hoặc UC-07.4 theo loại; cần làm rõ thì thực hiện UC-07.2."
+  ],
+  [
+   "Hậu điều kiện",
+   "Kết quả rà soát; chuyển 07.2 hoặc bước quyết định"
+  ],
+  [
+   "Luồng phụ",
+   "A1 tại bước 2: Không đủ thẩm quyền → chuyển cấp trong tối đa 1 ngày làm việc. A2 tại bước 4: Cần giải trình → UC-07.2, sau bổ sung phải rà soát lại."
+  ],
+  [
+   "Luồng ngoại lệ",
+   "E1 tại bước 3: Chưa đủ cơ sở → chưa ra quyết định phê duyệt."
+  ],
+  [
+   "Ràng buộc nghiệp vụ (quy tắc nghiệp vụ)",
+   "QT-40,42–43; CN-89–94: rà soát và đối chiếu thẩm quyền; không đủ quyền chuyển cấp tối đa 1 ngày làm việc; đủ hồ sơ mới tính hạn quyết định. UC-07.1 chưa ra phê duyệt chính thức.\nTruy vết: I FINAL CN-89–94"
+  ]
+ ],
+ "UC-07.2": [
+  [
+   "Thành phần",
+   "Nội dung"
+  ],
+  [
+   "Tên ca sử dụng",
+   "Yêu cầu giải trình và hoàn thiện phương án"
+  ],
+  [
+   "ID",
+   "UC-07.2"
+  ],
+  [
+   "Tác nhân liên quan",
+   "PMO; RM"
+  ],
+  [
+   "Mục tiêu",
+   "Yêu cầu và tiếp nhận giải trình; chỉ bổ sung thì rà soát lại, đổi phân bổ/xung đột thì trả V6/V7."
+  ],
+  [
+   "Tiền điều kiện",
+   "Hồ sơ đang cần làm rõ tại UC-07.1."
+  ],
+  [
+   "Luồng chính",
+   "1. PMO ghi yêu cầu giải trình, lý do và vị trí cần điều chỉnh.\n2. RM cung cấp giải trình/tài liệu bổ sung.\n3. PMO xem nội dung mới; hệ thống lưu yêu cầu và kết quả.\n4. Nếu chỉ bổ sung hồ sơ, quay UC-07.1 rà soát lại; nếu đổi phân bổ/xung đột, trả V6/V7 để xây dựng/cân đối lại."
+  ],
+  [
+   "Hậu điều kiện",
+   "Hồ sơ bổ sung hoặc yêu cầu lập/cân đối lại"
+  ],
+  [
+   "Luồng phụ",
+   "A1 tại bước 4: Sửa dữ liệu phương án → tạo phiên bản cập nhật và trình lại, không quay thẳng bước quyết định."
+  ],
+  [
+   "Luồng ngoại lệ",
+   "E1 tại bước 2: Giải trình chưa đáp ứng → giữ trạng thái chờ bổ sung, chỉ rõ nội dung còn thiếu."
+  ],
+  [
+   "Ràng buộc nghiệp vụ (quy tắc nghiệp vụ)",
+   "QT-44,46; CN-95–96,101: yêu cầu sửa có lý do/vị trí. Bổ sung quay rà soát; đổi phân bổ/xung đột trả V6/V7; giữ phiên bản và lưu vết.\nTruy vết: I FINAL CN-95–96; tham chiếu 101"
+  ]
+ ],
+ "UC-07.3": [
+  [
+   "Thành phần",
+   "Nội dung"
+  ],
+  [
+   "Tên ca sử dụng",
+   "Phê duyệt phương án"
+  ],
+  [
+   "ID",
+   "UC-07.3"
+  ],
+  [
+   "Tác nhân liên quan",
+   "PMO; CEO"
+  ],
+  [
+   "Mục tiêu",
+   "Ra quyết định thông thường, lưu lý do/phiên bản; duyệt thì xác lập Locked Baseline và chuyển kết quả."
+  ],
+  [
+   "Tiền điều kiện",
+   "Hồ sơ đã rà soát đủ cơ sở; đúng cấp DoA."
+  ],
+  [
+   "Luồng chính",
+   "1. PMO/CEO xem hồ sơ đủ cơ sở và thuộc thẩm quyền.\n2. Người có thẩm quyền quyết định phê duyệt, yêu cầu chỉnh sửa hoặc từ chối.\n3. Hệ thống lưu loại quyết định, lý do/điều kiện, người, thời điểm và phiên bản hồ sơ.\n4. Nếu được duyệt, xác lập Locked Baseline và chuyển kết quả cho các vùng dùng chung; nếu cần sửa, trả đúng vùng."
+  ],
+  [
+   "Hậu điều kiện",
+   "Quyết định, cam kết được duyệt hoặc hồ sơ trả/từ chối"
+  ],
+  [
+   "Luồng phụ",
+   "A1 tại bước 2: Yêu cầu chỉnh sửa → có lý do và vị trí cần sửa, chuyển đúng V6/V7 hoặc UC-07.2."
+  ],
+  [
+   "Luồng ngoại lệ",
+   "E1 tại bước 1: Chạm điều kiện CEO nhưng chưa có quyết định CEO → chưa xác lập Locked Baseline."
+  ],
+  [
+   "Ràng buộc nghiệp vụ (quy tắc nghiệp vụ)",
+   "QT-40–44,46; CN-97,99–102: đúng DoA; quyết định tối đa 2 ngày làm việc từ đủ hồ sơ. Ghi người/lý do/phiên bản; chỉ quyết định duyệt hợp lệ xác lập Locked Baseline.\nTruy vết: I FINAL CN-97, 99–102"
+  ]
+ ],
+ "UC-07.4": [
+  [
+   "Thành phần",
+   "Nội dung"
+  ],
+  [
+   "Tên ca sử dụng",
+   "Phê duyệt ngoại lệ"
+  ],
+  [
+   "ID",
+   "UC-07.4"
+  ],
+  [
+   "Tác nhân liên quan",
+   "PMO; CEO"
+  ],
+  [
+   "Mục tiêu",
+   "Xem xét ngoại lệ có lý do, điều kiện hoàn trả/rà soát lại và cấp có thẩm quyền."
+  ],
+  [
+   "Tiền điều kiện",
+   "Có hồ sơ ngoại lệ, lý do và căn cứ thẩm quyền."
+  ],
+  [
+   "Luồng chính",
+   "1. PMO/CEO xem hồ sơ ngoại lệ và văn bản giải trình bất khả kháng.\n2. Người có thẩm quyền xem tác động, điều kiện ràng buộc hoàn trả và rà soát lại.\n3. Người có thẩm quyền duyệt ngoại lệ hoặc từ chối; hệ thống lưu đầy đủ quyết định và điều kiện.\n4. Chỉ khi được duyệt hợp lệ mới chuyển kết quả, cam kết và điều kiện cho các vùng liên quan."
+  ],
+  [
+   "Hậu điều kiện",
+   "Quyết định ngoại lệ hoặc từ chối, điều kiện kèm theo"
+  ],
+  [
+   "Luồng phụ",
+   "A1 tại bước 3: Từ chối → ghi lý do, trả vùng lập/cân đối phương án."
+  ],
+  [
+   "Luồng ngoại lệ",
+   "E1 tại bước 1: Thiếu giải trình hoặc điều kiện hoàn trả → yêu cầu bổ sung; ngoại lệ chưa có hiệu lực."
+  ],
+  [
+   "Ràng buộc nghiệp vụ (quy tắc nghiệp vụ)",
+   "QT-40–43,45–46; CN-98–102: ngoại lệ có giải trình bất khả kháng và ràng buộc hoàn trả; >110% trên 2 tuần bắt buộc CEO; lưu quyết định và điều kiện áp dụng.\nTruy vết: I FINAL CN-98; kết quả theo 99–102"
+  ]
+ ],
+ "UC-08.1": [
+  [
+   "Thành phần",
+   "Nội dung"
+  ],
+  [
+   "Tên ca sử dụng",
+   "Tính và cập nhật chi phí phương án"
+  ],
+  [
+   "ID",
+   "UC-08.1"
+  ],
+  [
+   "Tác nhân liên quan",
+   "PM; Tài chính"
+  ],
+  [
+   "Mục tiêu",
+   "Xác định yếu tố chi phí, đơn giá, dự toán/dự báo; ghi chi phí thực tế và tính lại khi thay đổi."
+  ],
+  [
+   "Tiền điều kiện",
+   "Có phương án/dòng bố trí, khoảng thời gian và dữ liệu đơn giá cần tính."
+  ],
+  [
+   "Luồng chính",
+   "1. PM xác định yếu tố chi phí từ người, số lượng, mức tham gia và thời gian của phương án.\n2. Tài chính cung cấp/cập nhật đơn giá và căn cứ tính; hệ thống hỗ trợ tính dự toán.\n3. Khi dữ liệu thay đổi, PM/Tài chính cập nhật phần bị ảnh hưởng và phân biệt dự toán với dự báo chi phí.\n4. Tài chính ghi chi phí thực tế; hệ thống lưu các kết quả và căn cứ để UC-08.2/08.3 sử dụng."
+  ],
+  [
+   "Hậu điều kiện",
+   "Chi phí dự toán/dự báo và phần bị ảnh hưởng"
+  ],
+  [
+   "Luồng phụ",
+   "A1 tại bước 3: Thay người/số lượng/thời gian/%FTE → tính lại phần bị ảnh hưởng, không giữ tổng cũ."
+  ],
+  [
+   "Luồng ngoại lệ",
+   "E1 tại bước 2: Thiếu đơn giá/yếu tố bắt buộc → yêu cầu Tài chính bổ sung, chưa kết luận chi phí chính thức."
+  ],
+  [
+   "Ràng buộc nghiệp vụ (quy tắc nghiệp vụ)",
+   "QT-48–49; CN-103–107: thay người, số lượng, thời gian hoặc mức tham gia phải xem xét tính lại; phân biệt dự toán, dự báo và chi phí thực tế. Thiếu căn cứ thì yêu cầu bổ sung, chưa tính chính thức.\nTruy vết: I FINAL CN-103–107"
+  ]
+ ],
+ "UC-08.2": [
+  [
+   "Thành phần",
+   "Nội dung"
+  ],
+  [
+   "Tên ca sử dụng",
+   "Đối chiếu chi phí và ngân sách"
+  ],
+  [
+   "ID",
+   "UC-08.2"
+  ],
+  [
+   "Tác nhân liên quan",
+   "PM; Tài chính"
+  ],
+  [
+   "Mục tiêu",
+   "Đối chiếu chi phí với ngân sách duyệt/phần còn lại; ghi chênh lệch, trạng thái và nguyên nhân."
+  ],
+  [
+   "Tiền điều kiện",
+   "Có kết quả chi phí, ngân sách và phạm vi tính thống nhất."
+  ],
+  [
+   "Luồng chính",
+   "1. PM/Tài chính chọn kết quả chi phí và ngân sách được duyệt/phần còn lại.\n2. PM/Tài chính đối chiếu số liệu cùng thời điểm; hệ thống tính chênh lệch và tỷ lệ vượt theo công thức chung.\n3. PM/Tài chính ghi trạng thái ngân sách và nguyên nhân vượt.\n4. Hệ thống lưu căn cứ tại thời điểm đánh giá; PM dùng kết quả tại UC-08.4."
+  ],
+  [
+   "Hậu điều kiện",
+   "Kết quả đối chiếu ngân sách"
+  ],
+  [
+   "Luồng phụ",
+   "A1 tại bước 2: Không vượt ngân sách còn lại → ghi trong hạn mức."
+  ],
+  [
+   "Luồng ngoại lệ",
+   "E1 tại bước 2: Ngân sách còn lại ≤0 hoặc thiếu số liệu → không chia để tính tỷ lệ; yêu cầu Tài chính xác nhận căn cứ, chưa tự chọn cấp từ tỷ lệ không xác định."
+  ],
+  [
+   "Ràng buộc nghiệp vụ (quy tắc nghiệp vụ)",
+   "QT-47; CN-108–109; D07: so cùng thời điểm/phạm vi. Tỷ lệ vượt = max(0, chi phí cần cho phần còn lại − ngân sách còn lại) / ngân sách còn lại ×100% khi ngân sách còn lại >0. Mẫu số ≤0 thì chưa tính tỷ lệ, yêu cầu Tài chính xác nhận căn cứ.\nTruy vết: I FINAL CN-108–109"
+  ]
+ ],
+ "UC-08.3": [
+  [
+   "Thành phần",
+   "Nội dung"
+  ],
+  [
+   "Tên ca sử dụng",
+   "So sánh đánh đổi giữa các phương án"
+  ],
+  [
+   "ID",
+   "UC-08.3"
+  ],
+  [
+   "Tác nhân liên quan",
+   "PM"
+  ],
+  [
+   "Mục tiêu",
+   "So sánh từ hai phương án theo chất lượng tối thiểu, rồi chi phí, rồi thời gian; hệ thống cung cấp dữ liệu."
+  ],
+  [
+   "Tiền điều kiện",
+   "Có ít nhất hai phương án và căn cứ so sánh."
+  ],
+  [
+   "Luồng chính",
+   "1. PM chọn từ hai phương án và dữ liệu chất lượng, chi phí, thời gian.\n2. PM kiểm tra yêu cầu chất lượng tối thiểu.\n3. PM so sánh các phương án đạt yêu cầu theo thứ tự chất lượng, chi phí rồi thời gian; hệ thống hiển thị số liệu hỗ trợ.\n4. Hệ thống lưu kết quả so sánh/đánh đổi do PM lựa chọn."
+  ],
+  [
+   "Hậu điều kiện",
+   "Kết quả so sánh đánh đổi"
+  ],
+  [
+   "Luồng phụ",
+   "A1 tại bước 2: Phương án rẻ hơn không đạt chất lượng tối thiểu → không coi là phù hợp chỉ vì rẻ."
+  ],
+  [
+   "Luồng ngoại lệ",
+   "E1 tại bước 1: Thiếu dữ liệu hoặc chỉ một phương án → bổ sung căn cứ; chưa kết luận so sánh nhiều phương án."
+  ],
+  [
+   "Ràng buộc nghiệp vụ (quy tắc nghiệp vụ)",
+   "QT-50; CN-110: so ít nhất hai phương án theo chất lượng, chi phí rồi thời gian; giá rẻ không bù cho việc không đạt chất lượng tối thiểu. PM quyết định đánh đổi, hệ thống hỗ trợ dữ liệu.\nTruy vết: I FINAL CN-110"
+  ]
+ ],
+ "UC-08.4": [
+  [
+   "Thành phần",
+   "Nội dung"
+  ],
+  [
+   "Tên ca sử dụng",
+   "Xác định hướng xử lý và chuyển cấp ngân sách"
+  ],
+  [
+   "ID",
+   "UC-08.4"
+  ],
+  [
+   "Tác nhân liên quan",
+   "PM; PMO; CEO"
+  ],
+  [
+   "Mục tiêu",
+   "PM chọn hướng xử lý; không quá 10% tự điều chỉnh hoặc xin PMO; trên 10% chuyển CEO; ghi quyết định."
+  ],
+  [
+   "Tiền điều kiện",
+   "Có đối chiếu chi phí/ngân sách đủ cơ sở."
+  ],
+  [
+   "Luồng chính",
+   "1. PM xem đối chiếu ngân sách và các phương án/đánh đổi.\n2. PM chọn giữ, điều chỉnh hoặc chuyển cấp; nếu vượt không quá 10% thì tự điều chỉnh hoặc xin PMO, trên 10% thì chuyển CEO.\n3. PMO/CEO ra và ghi quyết định khi hồ sơ thuộc thẩm quyền; hệ thống lưu hướng xử lý và quyết định thực tế.\n4. PM chuyển kết quả chi phí, ngân sách, đánh đổi cho V8; thông tin liên quan cho V10."
+  ],
+  [
+   "Hậu điều kiện",
+   "Hướng xử lý/quyết định ngân sách, thông tin V8/V10"
+  ],
+  [
+   "Luồng phụ",
+   "A1 tại bước 2: Điều chỉnh phương án → quay UC-08.1/08.2 cập nhật số liệu trước khi kết luận."
+  ],
+  [
+   "Luồng ngoại lệ",
+   "E1 tại bước 2: Tỷ lệ vượt chưa xác định → xác minh với Tài chính; không coi việc gắn cấp là đã có phê duyệt."
+  ],
+  [
+   "Ràng buộc nghiệp vụ (quy tắc nghiệp vụ)",
+   "QT-51; CN-111–112,128–129: vượt ≤10% PM điều chỉnh hoặc xin PMO; >10% chuyển CEO. Khi tỷ lệ chưa xác định, xác minh căn cứ với Tài chính, không tự gắn cấp từ số không xác định. Ngân sách khác quyết định phương án của V8.\nTruy vết: I FINAL CN-111–112, 128–129"
+  ]
+ ],
+ "UC-09.1": [
+  [
+   "Thành phần",
+   "Nội dung"
+  ],
+  [
+   "Tên ca sử dụng",
+   "Tổng hợp và phân tích cung – cầu nguồn lực"
+  ],
+  [
+   "ID",
+   "UC-09.1"
+  ],
+  [
+   "Tác nhân liên quan",
+   "RM; PM"
+  ],
+  [
+   "Mục tiêu",
+   "Tổng hợp cung/cầu, trừ cam kết, dùng kết quả dự báo để phân tích thiếu/dư và chuyển thông tin theo quyết định RM."
+  ],
+  [
+   "Tiền điều kiện",
+   "Có phạm vi/khoảng thời gian và quyền truy cập dữ liệu tập trung; có thể bắt đầu tổng hợp khi dữ liệu còn thiếu."
+  ],
+  [
+   "Luồng chính",
+   "1. RM tổng hợp nguồn cung, lịch và đủ các cam kết; đồng thời PM cung cấp/xác nhận nhu cầu và nhu cầu dự kiến.\n2. RM kiểm tra cơ sở nguồn cung; hệ thống xác định cung có thể đáp ứng sau khi trừ đủ cam kết.\n3. RM thực hiện UC-09.2 để sàng lọc nhu cầu, dự báo và đối chiếu theo thời gian.\n4. RM phân tích đáp ứng/thiếu/dư theo số lượng, vai trò, kỹ năng và thời điểm; xem V9 chỉ làm căn cứ bổ sung.\n5. RM xác nhận kết luận, xét thiếu/dư hoặc khác kỳ trước và quyết định chuyển thông tin theo quy định; hệ thống ghi quyết định.\n6. Hệ thống chuyển theo quyết định RM: V2 nhận khả năng cung ứng/thiếu-dư; V6 nhận lịch/cung còn lại; V7 nhận tình trạng cung-cầu; V8 nhận tổng hợp/dự báo. PM tra cứu kết quả."
+  ],
+  [
+   "Hậu điều kiện",
+   "Bức tranh cung/cầu, khoảng thiếu/dư và kết quả theo nơi nhận"
+  ],
+  [
+   "Luồng phụ",
+   "A1 tại bước 4: Tổng số đủ nhưng thiếu kỹ năng hoặc lệch thời gian → ghi thiếu năng lực/thời điểm. A2 tại bước 5: Không thiếu/dư, không đổi kết luận và không có yêu cầu quản lý khác → RM ghi tiếp tục theo dõi."
+  ],
+  [
+   "Luồng ngoại lệ",
+   "E1 tại bước 2: Cung chưa đủ cơ sở → ghi phần thiếu, yêu cầu bổ sung, lưu tạm và kết thúc trước dự báo chính thức. E2 tại bước 3: Không có nhu cầu đủ cơ sở → trả RM/PM xác nhận, không suy cầu bằng 0."
+  ],
+  [
+   "Ràng buộc nghiệp vụ (quy tắc nghiệp vụ)",
+   "QT-53–54; CN-113–115,120–124; D08–D09: trừ đủ cam kết; phân tích bốn chiều; thiếu/dư hoặc khác kết luận kỳ trước thì RM xác nhận chuyển, trường hợp khác xét quy định để chuyển/theo dõi. V9 chỉ căn cứ bổ sung, không dùng dự báo.\nTruy vết: I FINAL CN-113–115, 120–124"
+  ]
+ ],
+ "UC-09.2": [
+  [
+   "Thành phần",
+   "Nội dung"
+  ],
+  [
+   "Tên ca sử dụng",
+   "Dự báo cung – cầu nguồn lực"
+  ],
+  [
+   "ID",
+   "UC-09.2"
+  ],
+  [
+   "Tác nhân liên quan",
+   "RM"
+  ],
+  [
+   "Mục tiêu",
+   "Xét nhu cầu đủ cơ sở/mức chắc chắn, dự báo và đối chiếu theo thời gian; tuần hoặc ngoài chu kỳ theo nguồn."
+  ],
+  [
+   "Tiền điều kiện",
+   "Nguồn cung đã đủ cơ sở cho phạm vi dự báo; có tập nhu cầu và khoảng thời gian."
+  ],
+  [
+   "Luồng chính",
+   "1. Hệ thống nhận cung có thể đáp ứng, nhu cầu và khoảng thời gian từ UC-09.1.\n2. RM xét từng nhu cầu theo trạng thái, mức chắc chắn, thời gian và phạm vi; ghi lý do chưa đủ cơ sở.\n3. RM gắn nhãn đã xác nhận/dự kiến cho nhu cầu đủ cơ sở; hệ thống giữ riêng các nhãn.\n4. RM lập dự báo cung và cầu; hệ thống hỗ trợ đối chiếu từng khoảng thời gian và xác định mức đáp ứng.\n5. Hệ thống lưu kết quả, mức chắc chắn, dữ liệu thiếu và trả UC-09.1 phân tích."
+  ],
+  [
+   "Hậu điều kiện",
+   "Kết quả dự báo/đối chiếu kèm mức thiếu dữ liệu"
+  ],
+  [
+   "Luồng phụ",
+   "A1 tại bước 2: Nhu cầu chưa đủ cơ sở → ghi lý do, chưa đưa vào dự báo; xét nhu cầu tiếp theo. A2: Có thay đổi đáng kể → cập nhật ngoài kỳ trong một ngày làm việc; không thay đổi thì giữ đến kỳ tuần."
+  ],
+  [
+   "Luồng ngoại lệ",
+   "E1 tại bước 3: Không có nhu cầu đủ cơ sở/danh sách rỗng → trả xác nhận, chưa kết luận dư nguồn. E2: Cung thiếu làm phạm vi không đủ cơ sở → chưa công bố dự báo chính thức."
+  ],
+  [
+   "Ràng buộc nghiệp vụ (quy tắc nghiệp vụ)",
+   "QT-52,55–57; CN-116–119,125–126; PCN-03: cùng khoảng thời gian, phân biệt mức chắc chắn và ghi thiếu dữ liệu; dự báo tuần sau cập nhật lịch V5, ngoài kỳ trong 1 ngày làm việc khi thay đổi đáng kể; không dùng lịch sử/cơ hội/chi phí để dự báo.\nTruy vết: I FINAL CN-116–119, 125–126"
+  ]
+ ]
+}
